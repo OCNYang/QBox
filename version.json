@@ -1,0 +1,5 @@
+{
+          "url":"https://raw.githubusercontent.com/feicien/android-auto-update/develop/extras/android-auto-update-v1.1.apk",
+          "versionCode":2,
+          "updateMessage":"1. 新增XX功能;<br/>2. 修复了Bug;<br/>3. 优化了性能。"
+        }
