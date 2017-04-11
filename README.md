@@ -7,7 +7,7 @@
 **地址一：**[http://fir.im/3qtg](http://fir.im/3qtg)  
 **地址二：**[https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
 
-## 本架构集成的各个框架的使用说明
+## 本应用集成的各开源库或控件的说明
 
 @versionCode 1  
 @versionName "1.0.0"  
@@ -505,8 +505,7 @@ DayNightActivity的例子的方式是在设置页的的代码方式。
 
 下面具有导航栏的主体app的设计思路。  
 由于这种导航是一级导航，目前不建议在app的一级页面就采用 `viewpager+Fragment` 或导航栏+ `Fragment` 的形式设计。  
-建议采用独立 `activity+include` 布局  
-+ `android:launchMode="singleTask"` + `theme:<item name="android:windowAnimationStyle">@style/noAnimation</item>` (取消activity跳转自带的原生动画)的形式  
+建议采用独立 `activity+include` 布局 + `android:launchMode="singleTask"` + `theme:<item name="android:windowAnimationStyle">@style/noAnimation</item>` (取消activity跳转自带的原生动画)的形式  
 
 这样的好处：能将每个一级功能分类页相互分离开来不相互影响。经过观察和猜想知乎采用的应该是这种方式。这样的方式也能达到和上面一样的效果，同时又解决了Fragment带来的不便。  
 
