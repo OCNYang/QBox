@@ -4,5 +4,5 @@
 一款简约纯净有爱的生活工具类App。
 
 下载地址：  
-[**地址一：**http://fir.im/3qtg](http://fir.im/3qtg)  
-[**地址二：**https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
+**地址一：**[http://fir.im/3qtg](http://fir.im/3qtg)  
+**地址二：**[https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
