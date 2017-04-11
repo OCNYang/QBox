@@ -1,7 +1,7 @@
 [
     {
         "url": "https://raw.githubusercontent.com/feicien/android-auto-update/develop/extras/android-auto-update-v1.1.apk",
-        "versionCode": 2,
+        "versionCode": 1,
         "versionName": "测试版",
         "updateMessage": "1. 新增XX功能;<br/>2. 修复了Bug;<br/>3. 优化了性能。",
         "dateTime": "2017年4月11日",
@@ -9,7 +9,7 @@
     },
     {
         "url": "https://raw.githubusercontent.com/feicien/android-auto-update/develop/extras/android-auto-update-v1.1.apk",
-        "versionCode": 1,
+        "versionCode": 0,
         "versionName": "首发版",
         "updateMessage": "1. 新增XX功能;<br/>2. 修复了Bug;<br/>3. 优化了性能。",
         "dateTime": "2017年4月11日",
