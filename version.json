@@ -1,6 +1,14 @@
 [
     {
         "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
+        "versionCode": 2,
+        "versionName": "1.3",
+        "updateMessage": "1. 主页闪退修复；\n2. 主页白屏修复；老黄历白屏修复；\n3. 导航页添加指示器；\n4. 添加定位法定节假日功能；\n5. 各页面修复完善。",
+        "dateTime": "2017年4月14日",
+        "author": "OCNYang"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
         "versionCode": 1,
         "versionName": "测试版",
         "updateMessage": "1. 新增XX功能;<br/>2. 修复了Bug;<br/>3. 优化了性能。",
