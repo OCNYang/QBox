@@ -1,6 +1,14 @@
 [
     {
         "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
+        "versionCode": 3,
+        "versionName": "1.5",
+        "updateMessage": "1. 主页沉浸式设计；\n2. 修复低版本手机上出现的内存溢出问题。",
+        "dateTime": "2017年4月25日",
+        "author": "OCNYang"
+    },
+	{
+        "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
         "versionCode": 2,
         "versionName": "1.3",
         "updateMessage": "1. 主页闪退修复；\n2. 主页白屏修复；老黄历白屏修复；\n3. 导航页添加指示器；\n4. 添加定位法定节假日功能；\n5. 各页面修复完善。",
