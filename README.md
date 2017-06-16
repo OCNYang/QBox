@@ -16,8 +16,8 @@
 
 ## 本应用集成的各开源库或控件的说明
 
-@versionCode 1  
-@versionName "1.0.0"  
+[![Version Code](https://img.shields.io/badge/Version%20Code-3-brightgreen.svg)](https://github.com/OCNYang/QBox)  
+[![Version Name](https://img.shields.io/badge/Version%20Name-v1.5%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
 
 ---
 ### Logger 日志打印  
