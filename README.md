@@ -4,7 +4,7 @@
 <img src="http://obbu6r1mi.bkt.clouddn.com/qbox/qbox.png" width = "512" height = "440" alt="小秋魔盒" align=center />
 </div>
 
-[![GitHub issues](https://img.shields.io/github/issues/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/issues) [![GitHub forks](https://img.shields.io/github/forks/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/network) [![GitHub stars](https://img.shields.io/github/stars/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/stargazers)  
+[![GitHub issues](https://img.shields.io/github/issues/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/issues)&ensp;&ensp;[![GitHub forks](https://img.shields.io/github/forks/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/network)&ensp;&ensp;[![GitHub stars](https://img.shields.io/github/stars/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/stargazers)  
 
 小秋魔盒（QBox）是一个生活工具 Android App，由 OCN.Yang 开发，第一个版本上线时间：2017.04.11  
 
