@@ -521,26 +521,11 @@ DayNightActivity的例子的方式是在设置页的的代码方式。
 另外一种：点击一次返回到main主导航页面，在main页面点击一次直接退出程序（这也是知乎实现的方式，同时因为在main页面点击一次就直接退出了，所以在其他主导航页面如果连续点击两次也能达到直接退出程序的效果。）
 
 ## 更多地方找到本文   
-<br>
 
-[![简书](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-http%3A%2F%2Fwww.jianshu.com%2Fp%2F3442a0b2eee1-blue.svg?style=social)](http://www.jianshu.com/p/3442a0b2eee1)&ensp;&ensp;[![掘金](https://img.shields.io/badge/%E6%8E%98%E9%87%91-https%3A%2F%2Fjuejin.im%2Fuser%2F593a09f9fe88c2006a0034ea-red.svg?style=social)](https://juejin.im/user/593a09f9fe88c2006a0034ea)  
+[![简书](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-http%3A%2F%2Fwww.jianshu.com%2Fp%2F3442a0b2eee1-blue.svg?style=social)](http://www.jianshu.com/p/3442a0b2eee1)  
+[![掘金](https://img.shields.io/badge/%E6%8E%98%E9%87%91-https%3A%2F%2Fjuejin.im%2Fuser%2F593a09f9fe88c2006a0034ea-red.svg?style=social)](https://juejin.im/user/593a09f9fe88c2006a0034ea)  
 
 <br>
 <br>
 
 [![ocnyang.com](https://img.shields.io/badge/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-www.ocnyang.com-lightgrey.svg?style=flat-square)](http://ocnyang.com/)&ensp;&ensp;[![新浪微博](https://img.shields.io/badge/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A-%E6%AC%A7%E6%AC%A7%E5%BF%83%E5%BF%83-red.svg?style=flat-square)](http://weibo.com/shedoor/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
