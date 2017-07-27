@@ -1,7 +1,7 @@
 # QBox  
 
 <div  align="center">
-<img src="http://obbu6r1mi.bkt.clouddn.com/qbox/qbox.png" width = "512" height = "440" alt="小秋魔盒" align=center />
+<img src="http://obbu6r1mi.bkt.clouddn.com/qbox/qbox.png" width = "400" alt="小秋魔盒" align=center />
 </div>
 
 [![GitHub issues](https://img.shields.io/github/issues/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/issues)&ensp;&ensp;[![GitHub forks](https://img.shields.io/github/forks/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/network)&ensp;&ensp;[![GitHub stars](https://img.shields.io/github/stars/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/stargazers)  
@@ -20,7 +20,7 @@
 
 ## 应用预览  
 
-> 图片依次是：  
+> 图片依次是（多动图，加载较慢）：  
 > 1.新闻模块 2.文章模块 3.日历模块  
 > 4.天气模块 5.颜色画板 6.盒子布局  
 > 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
@@ -29,21 +29,17 @@
 ![新闻资讯](http://obbu6r1mi.bkt.clouddn.com/qbox/list.png?imageView2/2/w/270/q/95)
 ![转场动画](http://obbu6r1mi.bkt.clouddn.com/qbox/skipanim.gif?imageView2/2/w/270/q/95)
 ![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/270/q/95)  
-
 ![天气模块](http://obbu6r1mi.bkt.clouddn.com/qbox/wealther.gif?imageView2/2/w/270/q/95)
 ![颜色画板](http://obbu6r1mi.bkt.clouddn.com/qbox/colorpicker.png?imageView2/2/w/270/q/95)
 ![盒子布局](http://obbu6r1mi.bkt.clouddn.com/qbox/flex.png?imageView2/2/w/270/q/95)  
-
 ![拖曳列表](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_headerandfooter.gif?imageView2/2/w/270/q/95)
 ![下拉果冻弹跳效果](http://obbu6r1mi.bkt.clouddn.com/qbox/shuaxin.gif?imageView2/2/w/270/q/95)
 ![引导页](http://obbu6r1mi.bkt.clouddn.com/qbox/sliding.gif?imageView2/2/w/270/q/95)  
-
 ![手势效果图片](http://obbu6r1mi.bkt.clouddn.com/qbox/PinImageview.gif?imageView2/2/w/270/q/95)
 ![能力表格](http://obbu6r1mi.bkt.clouddn.com/qbox/mpandroidchart.gif?imageView2/2/w/270/q/95)
 ![视差图片](http://obbu6r1mi.bkt.clouddn.com/qbox/ken.gif?imageView2/2/w/270/q/95)  
-
-![拖曳](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_yidong.gif?imageView2/2/w/300/q/95)
-![搜索框](http://obbu6r1mi.bkt.clouddn.com/qbox/searchLayout.gif?imageView2/2/w/300/q/95)
+![拖曳](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_yidong.gif?imageView2/2/w/405/q/95)
+![搜索框](http://obbu6r1mi.bkt.clouddn.com/qbox/searchLayout.gif?imageView2/2/w/405/q/95)
 
 ## 本应用集成的各开源库或控件的说明
 
