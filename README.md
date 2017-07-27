@@ -8,18 +8,41 @@
 
 小秋魔盒（QBox）是一个生活工具 Android App，由 OCN.Yang 开发，第一个版本上线时间：2017.04.11  
 
-一款简约纯净有爱的生活工具类App。
+一款简约纯净有爱的生活工具类App。  
+
+
+[![Version Code](https://img.shields.io/badge/Version%20Code-3-brightgreen.svg)](https://github.com/OCNYang/QBox)  
+[![Version Name](https://img.shields.io/badge/Version%20Name-v1.5%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
 
 下载地址：  
 **地址一：**[http://fir.im/qbox](http://fir.im/qbox)  
 **地址二：**[https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
 
+## 应用预览  
+
+> 图片依次是：  
+> 1.新闻模块 2.文章模块 3.日历模块  
+> 4.天气模块 5.颜色画板 6.盒子布局  
+> 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
+> 10.手势图片 11.能力图表格 12.视差图片  
+
+![新闻资讯](http://obbu6r1mi.bkt.clouddn.com/qbox/list.png?imageView2/2/w/300/q/95)
+![转场动画](http://obbu6r1mi.bkt.clouddn.com/qbox/skipanim.gif?imageView2/2/w/300/q/95)
+![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/300/q/95)
+![天气模块](http://obbu6r1mi.bkt.clouddn.com/qbox/wealther.gif?imageView2/2/w/300/q/95)
+![颜色画板](http://obbu6r1mi.bkt.clouddn.com/qbox/colorpicker.png?imageView2/2/w/300/q/95)
+![盒子布局](http://obbu6r1mi.bkt.clouddn.com/qbox/flex.png?imageView2/2/w/300/q/95)  
+![拖曳列表](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_headerandfooter.gif?imageView2/2/w/300/q/95)
+![下拉果冻弹跳效果](http://obbu6r1mi.bkt.clouddn.com/qbox/shuaxin.gif?imageView2/2/w/300/q/95)
+![引导页](http://obbu6r1mi.bkt.clouddn.com/qbox/sliding.gif?imageView2/2/w/300/q/95)
+![手势效果图片](http://obbu6r1mi.bkt.clouddn.com/qbox/PinImageview.gif?imageView2/2/w/300/q/95)
+![能力表格](http://obbu6r1mi.bkt.clouddn.com/qbox/mpandroidchart.gif?imageView2/2/w/300/q/95)
+![视差图片](http://obbu6r1mi.bkt.clouddn.com/qbox/ken.gif?imageView2/2/w/300/q/95)
+![拖曳](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_yidong.gif?imageView2/2/w/300/q/95)
+![搜索框](http://obbu6r1mi.bkt.clouddn.com/qbox/searchLayout.gif?imageView2/2/w/300/q/95)
+
 ## 本应用集成的各开源库或控件的说明
 
-[![Version Code](https://img.shields.io/badge/Version%20Code-3-brightgreen.svg)](https://github.com/OCNYang/QBox)  
-[![Version Name](https://img.shields.io/badge/Version%20Name-v1.5%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
-
----
 ### Logger 日志打印  
 
 Github地址：[https://github.com/orhanobut/logger](https://github.com/orhanobut/logger)  
