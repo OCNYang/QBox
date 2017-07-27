@@ -26,10 +26,10 @@
 > 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
 > 10.手势图片 11.能力图表格 12.视差图片  
 
-![新闻资讯](http://obbu6r1mi.bkt.clouddn.com/qbox/list.png?imageView2/2/w/300/q/95)
-![转场动画](http://obbu6r1mi.bkt.clouddn.com/qbox/skipanim.gif?imageView2/2/w/300/q/95)
-![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/300/q/95)
-![天气模块](http://obbu6r1mi.bkt.clouddn.com/qbox/wealther.gif?imageView2/2/w/300/q/95)
+![新闻资讯](http://obbu6r1mi.bkt.clouddn.com/qbox/list.png?imageView2/2/w/270/q/95)
+![转场动画](http://obbu6r1mi.bkt.clouddn.com/qbox/skipanim.gif?imageView2/2/w/270/q/95)
+![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/270/q/95)
+![天气模块](http://obbu6r1mi.bkt.clouddn.com/qbox/wealther.gif?imageView2/2/w/270/q/95)
 ![颜色画板](http://obbu6r1mi.bkt.clouddn.com/qbox/colorpicker.png?imageView2/2/w/300/q/95)
 ![盒子布局](http://obbu6r1mi.bkt.clouddn.com/qbox/flex.png?imageView2/2/w/300/q/95)  
 ![拖曳列表](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_headerandfooter.gif?imageView2/2/w/300/q/95)
