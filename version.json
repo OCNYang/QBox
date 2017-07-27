@@ -1,4 +1,13 @@
 [
+	
+    {
+        "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
+        "versionCode": 4,
+        "versionName": "1.6",
+        "updateMessage": "1. 添加天气模块；\n2. 图片显示效果调整；\n3. 部分细化调整。",
+        "dateTime": "2017年7月25日",
+        "author": "OCNYang"
+    },
     {
         "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
         "versionCode": 3,
