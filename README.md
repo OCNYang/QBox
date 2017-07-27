@@ -8,11 +8,11 @@
 
 小秋魔盒（QBox）是一个生活工具 Android App，由 OCN.Yang 开发，第一个版本上线时间：2017.04.11  
 
-一款简约纯净有爱的生活工具类App。  
+一款简约纯净有爱的生活工具类App。  
+主要功能有：新闻咨询；微信精选美文；笑话趣图；星座运势；**LED字幕** **天气；**快递查询；身份证查询；QQ吉凶查询；**日历；** **二维码；**手电筒；老黄历；手机号查询。
 
-
-[![Version Code](https://img.shields.io/badge/Version%20Code-3-brightgreen.svg)](https://github.com/OCNYang/QBox)  
-[![Version Name](https://img.shields.io/badge/Version%20Name-v1.5%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
+[![Version Code](https://img.shields.io/badge/Version%20Code-4-brightgreen.svg)](https://github.com/OCNYang/QBox)  
+[![Version Name](https://img.shields.io/badge/Version%20Name-v1.6%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
 
 下载地址：  
 **地址一：**[http://fir.im/qbox](http://fir.im/qbox)  
@@ -20,8 +20,8 @@
 
 ## 应用预览  
 
-> 图片依次是（多动图，加载较慢）：  
-> 1.新闻模块 2.文章模块 3.日历模块  
+> 图片依次是（多动图，加载较慢，图片不显示刷新页面）：  
+> 1.新闻模块 2.文章模块 3.日历模块  
 > 4.天气模块 5.颜色画板 6.盒子布局  
 > 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
 > 10.手势图片 11.能力图表格 12.视差图片  
