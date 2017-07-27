@@ -28,16 +28,20 @@
 
 ![新闻资讯](http://obbu6r1mi.bkt.clouddn.com/qbox/list.png?imageView2/2/w/270/q/95)
 ![转场动画](http://obbu6r1mi.bkt.clouddn.com/qbox/skipanim.gif?imageView2/2/w/270/q/95)
-![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/270/q/95)
+![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/270/q/95)  
+
 ![天气模块](http://obbu6r1mi.bkt.clouddn.com/qbox/wealther.gif?imageView2/2/w/270/q/95)
-![颜色画板](http://obbu6r1mi.bkt.clouddn.com/qbox/colorpicker.png?imageView2/2/w/300/q/95)
-![盒子布局](http://obbu6r1mi.bkt.clouddn.com/qbox/flex.png?imageView2/2/w/300/q/95)  
-![拖曳列表](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_headerandfooter.gif?imageView2/2/w/300/q/95)
-![下拉果冻弹跳效果](http://obbu6r1mi.bkt.clouddn.com/qbox/shuaxin.gif?imageView2/2/w/300/q/95)
-![引导页](http://obbu6r1mi.bkt.clouddn.com/qbox/sliding.gif?imageView2/2/w/300/q/95)
-![手势效果图片](http://obbu6r1mi.bkt.clouddn.com/qbox/PinImageview.gif?imageView2/2/w/300/q/95)
-![能力表格](http://obbu6r1mi.bkt.clouddn.com/qbox/mpandroidchart.gif?imageView2/2/w/300/q/95)
-![视差图片](http://obbu6r1mi.bkt.clouddn.com/qbox/ken.gif?imageView2/2/w/300/q/95)
+![颜色画板](http://obbu6r1mi.bkt.clouddn.com/qbox/colorpicker.png?imageView2/2/w/270/q/95)
+![盒子布局](http://obbu6r1mi.bkt.clouddn.com/qbox/flex.png?imageView2/2/w/270/q/95)  
+
+![拖曳列表](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_headerandfooter.gif?imageView2/2/w/270/q/95)
+![下拉果冻弹跳效果](http://obbu6r1mi.bkt.clouddn.com/qbox/shuaxin.gif?imageView2/2/w/270/q/95)
+![引导页](http://obbu6r1mi.bkt.clouddn.com/qbox/sliding.gif?imageView2/2/w/270/q/95)  
+
+![手势效果图片](http://obbu6r1mi.bkt.clouddn.com/qbox/PinImageview.gif?imageView2/2/w/270/q/95)
+![能力表格](http://obbu6r1mi.bkt.clouddn.com/qbox/mpandroidchart.gif?imageView2/2/w/270/q/95)
+![视差图片](http://obbu6r1mi.bkt.clouddn.com/qbox/ken.gif?imageView2/2/w/270/q/95)  
+
 ![拖曳](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_yidong.gif?imageView2/2/w/300/q/95)
 ![搜索框](http://obbu6r1mi.bkt.clouddn.com/qbox/searchLayout.gif?imageView2/2/w/300/q/95)
 
