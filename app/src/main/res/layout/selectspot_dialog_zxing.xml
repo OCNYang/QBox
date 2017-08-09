@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="17dp"
+              android:paddingRight="17dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:text="选择要解析成的格式："
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_dialog_zxing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="17dp"
+            android:text="扫取文本"/>
+
+        <RadioButton
+            android:id="@+id/rb_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="17dp"
+            android:text="打开网址"/>
+
+        <RadioButton
+            android:id="@+id/rb_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="17dp"
+            android:text="下载文件"/>
+
+        <RadioButton
+            android:id="@+id/rb_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="17dp"
+            android:text="获取图片"/>
+
+    </RadioGroup>
+
+</LinearLayout>

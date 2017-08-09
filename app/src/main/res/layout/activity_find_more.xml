@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_find_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ocnyang.qbox.app.module.find.FindMoreActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_findmore"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        app:title="更多功能"
+        app:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_findmore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--slidingTutorial  start/welcome -->
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="indicator_size">10dp</dimen>
+    <dimen name="indicator_spacing">2dp</dimen>
+
+    <!--    Android 系统自带的文本Style尺寸对应表
+    style="@style/TextAppearance.AppCompat.Display4" 112sp
+    style="@style/TextAppearance.AppCompat.Display3" 56sp
+    style="@style/TextAppearance.AppCompat.Display2" 45sp
+    style="@style/TextAppearance.AppCompat.Display1" 34sp
+    style="@style/TextAppearance.AppCompat.Headline" 24sp
+    style="@style/TextAppearance.AppCompat.Title"    21sp Bold
+    style="@style/TextAppearance.AppCompat.Subhead"  17sp(Device) 16sp(Desktop)
+    style="@style/TextAppearance.AppCompat.Body2"    15sp Bold(Device) 14sp Bold(Desktop)
+    style="@style/TextAppearance.AppCompat.Body1"    15sp(Device) 14sp Bold(Desktop)
+    style="@style/TextAppearance.AppCompat.Caption"  13sp
+    style="@style/TextAppearance.AppCompat.Button"   15sp Bold
+    -->
+
+    <!-- 尺寸大小的命名规则 -->
+    <!-- font sizes -->
+    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="button_height_normal">40dp</dimen>
+    <dimen name="button_height_short">32dp</dimen>
+
+
+
+    <dimen name="menubar_height">30dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="tools_bar_height">300dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="w_titlebar_size">48dp</dimen>
+</resources>

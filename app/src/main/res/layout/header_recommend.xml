@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:background="@color/colorPrimary"
+              android:gravity="center"
+              android:paddingRight="10dp"
+              android:paddingLeft="10dp"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchview_header_recommend"
+        android:layout_width="0dp"
+        android:queryHint="搜索目的地、游记、故事集、用户"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </android.support.v7.widget.SearchView>
+
+    <TextView
+        android:id="@+id/near_tv_header_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/header_right_recommend"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestedscrollview_wechat"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ocnyang.qbox.app.module.wechat.WeChatDetailsActivity"
+    tools:showIn="@layout/activity_we_chat_details">
+
+    <com.ocnyang.qbox.app.widget.Html5WebView
+        android:id="@+id/webview_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</android.support.v4.widget.NestedScrollView>

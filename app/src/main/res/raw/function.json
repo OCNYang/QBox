@@ -1,0 +1,82 @@
+{
+  "function": [
+    {
+      "id": 1,
+      "mark": 1,
+      "name": "万年历",
+      "code": "calendar"
+    },
+    {
+      "id": 2,
+      "mark": 1,
+      "name": "快递查询",
+      "code": "fastmail"
+    },
+    {
+      "id": 9,
+      "mark": 1,
+      "name": "黄金数据",
+      "code": "gold"
+    },
+    {
+      "id": 10,
+      "mark": 1,
+      "name": "股票数据",
+      "code": "gupiao"
+    },
+    {
+      "id": 6,
+      "mark": 1,
+      "name": "更多",
+      "code": "ic_add_white_24dp"
+    },
+    {
+      "id": 8,
+      "mark": 1,
+      "name": "身份证查询",
+      "code": "idcard"
+    },
+    {
+      "id": 3,
+      "mark": 1,
+      "name": "笑话大全",
+      "code": "joke"
+    },
+    {
+      "id": 11,
+      "mark": 1,
+      "name": "邮编查询",
+      "code": "mailcode"
+    },
+    {
+      "id": 5,
+      "mark": 1,
+      "name": "手机归属地",
+      "code": "mobile"
+    },
+    {
+      "id": 7,
+      "mark": 1,
+      "name": "QQ吉凶",
+      "code": "qq"
+    },
+    {
+      "id": 4,
+      "mark": 1,
+      "name": "星座运势",
+      "code": "stars"
+    },
+    {
+      "id": 12,
+      "mark": 1,
+      "name": "周公解梦",
+      "code": "moon"
+    },
+    {
+      "id": 13,
+      "mark": 1,
+      "name": "汇率",
+      "code": "sto"
+    }
+  ]
+}

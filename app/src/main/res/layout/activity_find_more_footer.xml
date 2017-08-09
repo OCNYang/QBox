@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="12dp"
+              android:paddingTop="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+
+        android:paddingRight="5.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="伴随必备"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过按钮切换功能的开关"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5.5dp"
+        android:layout_marginBottom="1dp"
+        android:paddingRight="5.5dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/star"/>
+
+        <TextView
+            android:id="@+id/history_findmore_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="星座运势"
+            android:textColor="@color/colorPrimaryText"/>
+        <TextView
+            android:id="@+id/userstar_fondmore_footer"
+            android:textSize="10sp"
+            android:text="白羊座"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:textColor="@color/secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Switch
+            android:id="@+id/switch_history_findmore_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="5.5dp"
+        android:paddingRight="5.5dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/laohuangli"/>
+
+        <TextView
+            android:id="@+id/laohuangli_findmore_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="老黄历"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <Switch
+            android:id="@+id/switch_laohuangli_findmore_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5.5dp"
+        android:paddingRight="5.5dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaohua"/>
+
+        <TextView
+            android:id="@+id/xiaohua_findmore_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="笑话大全"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <Switch
+            android:id="@+id/switch_xiaohua_findmore_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

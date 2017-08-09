@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/w_divider" />
+
+    <size
+        android:height="@dimen/w_divider_size"
+        android:width="@dimen/w_divider_size" />
+
+</shape>

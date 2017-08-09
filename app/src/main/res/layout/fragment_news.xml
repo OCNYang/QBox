@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="false"
+              tools:context="com.ocnyang.qbox.app.module.news.NewsFragment">
+
+    <ImageView
+        android:id="@+id/logo_news"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:src="@drawable/title_cat"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="45dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="35dp">
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/magic_indicator"
+            android:paddingRight="50dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/add_btn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_add_white_24dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

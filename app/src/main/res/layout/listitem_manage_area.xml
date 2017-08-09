@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/listitem_manage_area_delete_button"
+        android:layout_width="@dimen/w_titlebar_size"
+        android:layout_height="@dimen/w_titlebar_size"
+        android:background="@android:color/transparent"
+        android:contentDescription="delete"
+        android:scaleType="center"
+        android:src="@drawable/iconfont_delete" />
+
+    <TextView
+        android:id="@+id/listitem_manage_area_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/w_text_primary"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/listitem_manage_area_sort_button"
+        android:layout_width="@dimen/w_titlebar_size"
+        android:layout_height="@dimen/w_titlebar_size"
+        android:background="@android:color/transparent"
+        android:contentDescription="sort"
+        android:scaleType="center"
+        android:src="@drawable/iconfont_sort" />
+
+</LinearLayout>

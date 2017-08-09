@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/manage_areas_viewswitcher"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- android:background="#990b0f25" -->
+    <!-- #ff4290bf android:background="@drawable/dialog_manage_area_frame" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_linearlayout"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w_titlebar_size" >
+
+            <TextView
+                style="@style/w_dialog_titlebar_title"
+                android:layout_centerInParent="true"
+                android:text="位置管理" />
+
+            <Button
+                android:id="@+id/manage_areas_cancle_button"
+                style="@style/w_dialog_titlebar_button"
+                android:text="取消" />
+            
+            <Button
+                android:id="@+id/manage_areas_add"
+                style="@style/w_dialog_titlebar_button"
+                android:layout_alignParentRight="true"
+                android:text="添加" />
+        </RelativeLayout>
+
+        <com.mobeta.android.dslv.DragSortListView
+            android:id="@+id/manage_areas_dragSortListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:listSelector="@android:color/transparent"
+            app:click_remove_id="@+id/listitem_manage_area_delete_button"
+            app:drag_enabled="true"
+            app:drag_handle_id="@+id/listitem_manage_area_sort_button"
+            app:drag_start_mode="onDown"
+            app:float_background_color="#22ffffff"
+            app:remove_enabled="true"
+            app:remove_mode="clickRemove" >
+        </com.mobeta.android.dslv.DragSortListView>
+
+        <Button
+            android:id="@+id/manage_areas_ok_button"
+            style="@style/w_dialog_titlebar_button"
+            android:layout_width="match_parent"
+            android:text="保存"
+            android:textColor="@color/w_text_primary"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/w_titlebar_size"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/manage_areas_search_edittext"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_search_area"
+                android:drawableLeft="@drawable/ic_search_area"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:hint="搜索区/县/市/省..."
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="@color/w_text_primary"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/manage_areas_return_button"
+                style="@style/w_dialog_titlebar_button"
+                android:text="取消" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/manage_areas_search_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</ViewSwitcher>

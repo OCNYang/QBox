@@ -1,0 +1,75 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ocn="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ocnyang.qbox.app.module.find.constellation.DayConstellationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.RadarChart
+            android:id="@+id/radarchart_day_star"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+        </com.github.mikephil.charting.charts.RadarChart>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.ocnyang.qbox.app.widget.custom.MapTextView
+                android:id="@+id/luckycolor_day_star"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                ocn:keyText="幸运颜色"/>
+
+            <com.ocnyang.qbox.app.widget.custom.MapTextView
+                android:id="@+id/luckynumber_day_star"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                ocn:keyText="幸运数字"/>
+
+            <com.ocnyang.qbox.app.widget.custom.MapTextView
+                android:id="@+id/luckylove_day_star"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                ocn:keyText="速配星座"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_year_star"
+            android:text="今日概述"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/summary_day_star"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="3dp"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"
+            android:background="@drawable/bg_textview_shape"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用来存放App中用到的其他颜色-->
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="gray">#333333</color>
+    <color name="gray_line">#EFEFEF</color>
+    <color name="gray_price">#3C3C3C</color>
+    <color name="hint_gray">#8E8E8E</color>
+    <color name="bottom_border_gray">#E4E4E4</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="edittext_border_gray">#4A4A4A</color>
+    <color name="gray_cart_total">#F3F3F3</color>
+    <color name="gray_button">#8F8E9C</color>
+    <color name="gray_button_background">#F4F4F4</color>
+    <color name="gray_count_edittext_border">#E8E8E8</color>
+    <color name="gray_count_edittext_background">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="green_price">#28D33C</color>
+    <color name="red_hint">#FF5F5F</color>
+    <color name="main_blue">#00A3FF</color>
+    <color name="login_button">#3391DA</color>
+
+    <color name="order_unpaid">#00A3FF</color>
+    <color name="order_paid">#28D33C</color>
+    <color name="order_cancel">#FF5858</color>
+    <color name="order_complete">#686868</color>
+
+
+    <!--真正用到的颜色-->
+    <color name="border_1px">#99000000</color>
+
+    <color name="tip">#999c9c9c</color>
+    <color name="bg_focus">#ef4836</color>
+
+    <color name="bg_text_wechat_item">#88000000</color>
+    <color name="background_color">#FFFAFAFA</color>
+</resources>

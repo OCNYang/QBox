@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/aboutme.title"
+        android:text="个人简介"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/aboutme.text"
+            android:text="名字："/>
+
+        <TextView
+            style="@style/aboutme.text"
+            android:text="OCN.Yang"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/aboutme.text"
+        android:text="职业：Android 开发者"/>
+
+    <TextView
+        style="@style/aboutme.text"
+        android:text="坐标：浙江 杭州"/>
+
+    <TextView
+        style="@style/aboutme.title"
+        android:text="联系方式"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/aboutme.text"
+            android:text="邮箱："/>
+
+        <TextView
+            android:id="@+id/my_mail"
+            style="@style/aboutme.text"
+            android:text="ocnyang@gmail.com"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/aboutme.title"
+        android:text="出没地点"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/aboutme.text"
+            android:text="简    书："/>
+
+        <TextView
+            android:id="@+id/my_jianshu"
+            style="@style/aboutme.text"
+            android:text="http://www.jianshu.com/u/e61d05cbf47e"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/aboutme.text"
+            android:text="GitHub："/>
+
+        <TextView
+            android:id="@+id/my_github"
+            style="@style/aboutme.text"
+            android:text="https://github.com/OCNYang"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/aboutme.title"
+        android:text="关注/赞助"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ocnyang_sinaweibo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                style="@style/aboutme.text"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="新浪微博：欧欧心心"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/my_sinaweibo"
+                style="@style/aboutme.text"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="关注我，时刻查看最近动态"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ocnyang_wechat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                style="@style/aboutme.text"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="微信：yangocn"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/aboutme.text"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="有问题反馈可加微信，或可扫二维码赞助一下"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ocnyang_zfb"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                style="@style/aboutme.text"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="支付宝"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/aboutme.text"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="感觉App不错，且你的条件允许，可以扫描二维码赞助一下"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

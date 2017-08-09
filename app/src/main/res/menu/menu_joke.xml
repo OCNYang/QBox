@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.ocnyang.qbox.app.module.find.joke.JokeActivity">
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="100"
+        android:title="@string/action_new"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_random"
+        android:orderInCategory="100"
+        android:title="@string/action_random"
+        app:showAsAction="never"/>
+
+
+</menu>

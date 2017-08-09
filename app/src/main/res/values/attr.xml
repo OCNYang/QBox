@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="fit_system_windows">
+        <attr name="padding_status" format="boolean"/>
+        <attr name="status_color" format="color"/>
+        <attr name="padding_navigation" format="boolean"/>
+        <attr name="margin_status" format="boolean"/>
+        <attr name="margin_navigation" format="boolean"/>
+    </declare-styleable>
+
+    <!--SlidingLayout 的自定义属性-->
+    <declare-styleable name="SlidingLayout">
+        <attr name="background_view" format="reference"/>
+        <attr name="sliding_mode" format="enum">
+            <enum name="both" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/></attr>
+        <attr name="sliding_pointer_mode" format="enum">
+            <enum name="one" value="0"/>
+            <enum name="more" value="1"/></attr>
+        <attr name="top_max" format="dimension"/>
+    </declare-styleable>
+
+
+    <!--底部Tabbar菜单栏的自定义属性-->
+    <declare-styleable name="TabBar_Attr">
+        <attr name="icon" format="reference"/>
+        <attr name="name" format="string"/>
+    </declare-styleable>
+
+
+    <!--scrolltextview自定义的属性-->
+    <declare-styleable name="ScrollText">
+        <attr name="clickEnable" format="boolean" />
+        <attr name="isHorizontal" format="boolean" />
+        <attr name="speed" format="integer" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="times" format="integer" />
+    </declare-styleable>
+</resources>

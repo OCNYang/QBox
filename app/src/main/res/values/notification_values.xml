@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_height">64dip</dimen>
+    
+    <dimen name="notification_title_text_size">14sp</dimen>
+    <dimen name="notification_content_text_size">12sp</dimen>
+    
+    <color name="notification_title_text_color_white">#ffffffff</color>
+    <color name="notification_content_text_color_white">#ff999999</color>
+    
+    <color name="notification_title_text_color_black">#ff000000</color>
+    <color name="notification_content_text_color_black">#ff666666</color>
+    
+    <style name="NotificationTitleStyle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" >
+        <item name="android:textSize">@dimen/notification_title_text_size</item>
+    </style>
+    <style name="NotificationContentStyle" parent="@android:style/TextAppearance.StatusBar.EventContent" >
+         <item name="android:textSize">@dimen/notification_content_text_size</item>
+    </style>
+    
+    <style name="NotificationTitleStyle.Default">
+    </style>
+    <style name="NotificationContentStyle.Default">
+    </style>
+    
+    <style name="NotificationTitleStyle.White">
+        <item name="android:textColor">@color/notification_title_text_color_white</item>
+    </style>
+    <style name="NotificationContentStyle.White">
+        <item name="android:textColor">@color/notification_content_text_color_white</item>
+    </style>
+    
+    <style name="NotificationTitleStyle.Black">
+        <item name="android:textColor">@color/notification_title_text_color_black</item>
+    </style>
+    <style name="NotificationContentStyle.Black">
+        <item name="android:textColor">@color/notification_content_text_color_black</item>
+    </style>
+
+    <style name="NotificationTitleStyle.Widget">
+        <item name="android:textColor">@color/w_text_primary</item>
+    </style>
+
+    <style name="NotificationContentStyle.Widget">
+        <item name="android:textColor">@color/w_text_secondary</item>
+    </style>
+
+    <style name="NotificationAqi" parent="@android:style/TextAppearance.StatusBar.EventContent.Title">
+        <item name="android:textColor">#fff7f7f7</item>
+        <item name="android:shadowColor">#6e000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">2.5</item>
+    </style>
+
+    <style name="NotificationBg">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    
+    
+    <!-- <dimen name="notification_city_size">12dp</dimen> -->
+
+    <dimen name="weather_notification_content_margin_left">16.0dip</dimen>
+    <dimen name="weather_notification_time_margin_top">6.0dip</dimen>
+    <dimen name="weather_notification_bigtemp_margin_right">0.0dip</dimen>
+    <dimen name="weather_notification_range_margin_top">4.0dip</dimen>
+    <dimen name="weather_notification_icon_nodata_left">0.0dip</dimen>
+    <dimen name="notification_temp_size">48dip</dimen>
+    <dimen name="notification_temp_scorp_size">12.0dip</dimen>
+    <dimen name="notification_time_size">10.0dip</dimen>
+    <dimen name="notification_unit_size">15.0dip</dimen>
+    <dimen name="notification_aqinum_size">21.0dip</dimen>
+    <dimen name="notification_aqitext_size">12.0dip</dimen>
+    <dimen name="notification_aqi_width">62.0dip</dimen>
+    <dimen name="notification_small_city_top_padding">14.0dip</dimen>
+
+    <color name="notification_color_1">#fff0f0eb</color>
+    <color name="notification_color_2">#ff262626</color>
+    <color name="notification_color_3">#ffff3535</color>
+    <color name="notification_color_4">#ff6cff3c</color>
+    <color name="notification_color_5">#ff158aff</color>
+    <color name="notification_acolor_1">#8cf0f0eb</color>
+    <color name="notification_acolor_2">#8c262626</color>
+    <color name="notification_acolor_3">#8cff3535</color>
+    <color name="notification_acolor_4">#8c6cff3c</color>
+    <color name="notification_acolor_5">#8c158aff</color>
+    <color name="notification_divider_normal">#ff252525</color>
+    <color name="notification_divider_black">#ffd4d4d4</color>
+
+</resources>

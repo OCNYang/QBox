@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+       android:visible="true">
+    <!--~ visible:设置是否可见
+        ~ shape:形状,可选:rectangle(矩形,包括正方形),oval(椭圆,包括圆),line(线
+            段),ring(环形)
+        ~ innerRadiusRatio:当shape为ring才有效,表示环内半径所占半径的比率,如果
+            设置了innerRadius,他会被忽略
+        ~ innerRadius:当shape为ring才有效,表示环的内半径的尺寸
+        ~ thicknessRatio:当shape为ring才有效,表环厚度占半径的比率
+        ~ thickness:当shape为ring才有效,表示环的厚度,即外半径与内半径的差
+        ~ useLevel:当shape为ring才有效表示是否允许根据level来显示环的一部分-->
+
+    <!--&lt;!&ndash; 圆角 &ndash;&gt;-->
+    <corners
+        android:radius="20dp"/><!-- 设置圆角半径 -->
+
+
+
+    <!-- 间隔 -->
+    <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"/><!-- 各方向的间隔 -->
+
+
+    <!-- 填充 -->
+    <solid
+        android:color="@android:color/white"/><!-- 填充的颜色 -->
+
+    <!-- 描边，边框 -->
+    <!--<stroke
+        android:width="1px"
+        android:color="@color/colorAccent"/>--><!--dashGap虚线段的间距、dashWidth虚线段的长度-->
+
+</shape>

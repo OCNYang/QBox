@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background" >
+
+    <ImageButton
+        android:id="@+id/flashLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/switch_button"
+        android:src="@drawable/flash_light_off" />
+
+    <ImageButton
+        android:id="@+id/sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/switch_sos_button"
+        android:src="@drawable/sos_off" />
+
+</RelativeLayout>

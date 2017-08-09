@@ -1,0 +1,45 @@
+<resources>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--&lt;!&ndash;上面整个的设置   沉浸式菜单栏的颜色和最上面的控件的背景色是一样的&ndash;&gt;
+    <style name="AppTheme" parent="AppTheme.Base">
+        &lt;!&ndash;<item name="android:statusBarColor">?colorPrimaryDark</item>&ndash;&gt;
+
+        &lt;!&ndash;透明状态栏&ndash;&gt;
+        <item name="android:windowTranslucentStatus">true</item>
+        &lt;!&ndash;透明导航栏&ndash;&gt;
+        &lt;!&ndash;<item name="android:windowTranslucentNavigation">true</item>&ndash;&gt;
+        &lt;!&ndash;使状态栏，导航栏可绘制&ndash;&gt;
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="DayTheme" parent="AppTheme.Base">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="NightTheme" parent="NightThemeBase">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>-->
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--这种设置只是设置了菜单栏的颜色，和Toolbar的颜色是分开的；-->
+    <style name="AppTheme" parent="RootAppTheme"/>
+
+    <style name="DayTheme" parent="RootAppTheme"/>
+
+    <style name="NightTheme" parent="NightThemeBase"/>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <style name="DrawerHeaderTheme" parent="AppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

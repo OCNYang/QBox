@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:custom="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true"
+             tools:context="com.ocnyang.qbox.app.module.recommend.RecommendFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_recommend"
+        android:layout_width="match_parent"
+        android:layout_marginTop="45dp"
+        android:layout_height="match_parent">
+
+        <com.ocnyang.qbox.app.module.recommend.MyScrollview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:background="@color/colorBackGround"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/black"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation="Accordion"
+                    custom:pager_animation_span="1100">
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/custom_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        custom:selected_color="@color/colorPrimary"
+                        custom:selected_height="6dp"
+                        custom:selected_padding_left="2dp"
+                        custom:selected_padding_right="2dp"
+                        custom:selected_width="6dp"
+                        custom:shape="oval"
+                        custom:unselected_color="#55333333"
+                        custom:unselected_height="6dp"
+                        custom:unselected_padding_left="2dp"
+                        custom:unselected_padding_right="2dp"
+                        custom:unselected_width="6dp"
+                        />
+                </com.daimajia.slider.library.SliderLayout>
+
+                <include
+                    layout="@layout/title_context_recommend"/>
+
+                <com.ocnyang.qbox.app.widget.custom.CustomGridView
+                    android:id="@+id/gridview_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="100dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@null"
+                    android:numColumns="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+                </com.ocnyang.qbox.app.widget.custom.CustomGridView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/titlename2_context_recommend"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.ocnyang.qbox.app.module.recommend.MyScrollview>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--header-->
+    <include
+        layout="@layout/header_recommend"/>
+
+    <!--加载动画-->
+    <include
+        layout="@layout/loading_layout"/>
+</FrameLayout>

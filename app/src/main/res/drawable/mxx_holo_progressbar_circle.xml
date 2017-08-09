@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:drawable="@drawable/mxx_spinner_76_outer_holo" android:fromDegrees="0.0" android:toDegrees="1080.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+    <item>
+        <rotate android:drawable="@drawable/mxx_spinner_76_inner_holo" android:fromDegrees="720.0" android:toDegrees="0.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+</layer-list>
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <rotate android:drawable="@drawable/ic_notification_refresh" android:fromDegrees="-1080.0" android:toDegrees="0.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+<!--
+    <item >
+        <rotate
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="1080" >
+            <shape
+                android:innerRadiusRatio="3.5"
+                android:shape="ring"
+                android:thicknessRatio="20"
+                android:useLevel="false" >
+                <gradient
+                    android:centerY="0.50"
+                    android:endColor="#00000000"
+                    android:startColor="#336a6a6a"
+                    android:type="sweep"
+                    android:useLevel="false" />
+            </shape>
+        </rotate>
+    </item>
+    <item >
+        <rotate
+            android:fromDegrees="720"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="0" >
+            <shape
+                android:innerRadiusRatio="3.5"
+                android:shape="ring"
+                android:thicknessRatio="20"
+                android:useLevel="false" >
+                <gradient
+                    android:centerY="0.50"
+                    android:endColor="#776a6a6a"
+                    android:startColor="#00000000"
+                    android:type="sweep"
+                    android:useLevel="false" />
+            </shape>
+        </rotate>
+    </item>
+    -->
+</layer-list>

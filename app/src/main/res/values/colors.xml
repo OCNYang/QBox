@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用来存放APP的主颜色，辅助颜色，警示颜色-->
+<resources>
+    <color name="colorPrimary">#3F51B5</color><!--导航栏Toolbar的颜色-->
+    <color name="colorPrimaryDark">#303F9F</color><!--顶部沉浸式菜单栏的颜色-->
+    <color name="colorAccent">#FF4081</color><!--输入框，单选框，切换按钮的颜色-->
+    <color name="status_bar_color">@color/colorPrimaryDark</color>
+    <color name="colorBackGround">#FBF7ED</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorPrimaryText">#212121</color>
+
+
+
+    <color name="color3A3A3A">#1E282D</color><!--实际的颜色采用：知乎的颜色-->
+    <color name="color3F3F3F">#263238</color><!--实际的颜色采用：知乎的颜色-->
+    <color name="color8A9599">#8A9599</color>
+    <color name="color868686">#868686</color>
+
+
+    <!--<color name="primary_light">#C5CAE9</color>-->
+    <!--<color name="primary_text">#212121</color>-->
+
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white_overlay">#66ffffff</color>
+    <color name="bg_viewpager_title">#cc303F9F</color>
+    <color name="white_ccffffff">#77ffffff</color>
+
+    <color name="theme_primary_text_inverted">#ffffff</color>
+    <color name="theme_secondary_text_inverted">#8affffff</color>
+</resources>

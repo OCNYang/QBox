@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:context="com.ocnyang.qbox.app.module.pinchimage.PinImageActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/background"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#000000"-->
+        <!--android:alpha="0"/>-->
+
+    <com.ocnyang.qbox.app.widget.custom.PinchImageView
+        android:id="@+id/img_pinimg"
+        android:transitionName="@string/transition_pinchimageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_pinimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_viewpager_title"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:text="@string/app_name"/>
+</FrameLayout>

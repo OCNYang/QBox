@@ -1,0 +1,74 @@
+[
+    {
+        "outputFile": "E:\\QBox\\QBox\\magicindicator\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\219729b653483b2c64864a89b5ab1a527d1572f0\\output\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 76,
+                        "endOffset": 127
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\TravelLover\\TravelLover\\magicindicator\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\219729b653483b2c64864a89b5ab1a527d1572f0\\output\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 76,
+                        "endOffset": 127
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "E:\\newmove\\magicindicator\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\219729b653483b2c64864a89b5ab1a527d1572f0\\output\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 76,
+                        "endOffset": 127
+                    }
+                }
+            }
+        ]
+    }
+]

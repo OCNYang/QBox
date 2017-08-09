@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name">小秋魔盒</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_name">username</string>
+    <string name="password">password</string>
+    <string name="log_in">Log in</string>
+    <string name="title_activity_main">MVP Example</string>
+    <string name="username_error">Username cannot be empty</string>
+    <string name="password_error">Password cannot be empty</string>
+
+    <string name="ocn">欧神</string>
+    <string name="imtrue">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <!-- auto update功能 -->
+    <string name="android_auto_update_dialog_title">发现新版本</string>
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_dialog_btn_download">立即下载</string>
+    <string name="android_auto_update_dialog_btn_cancel">以后再说</string>
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+
+
+    <!-- slidingtutorial start/welcome引导页-->
+    <string name="text_web_ceo">美文/微信头条</string>
+    <string name="text_web_dev">生活必备的各种应用</string>
+    <string name="text_e_commerce">必不可少的工具大全</string>
+
+    <!--SlidingLayout background-->
+    <string name="sldinglayout_bg_power_info">author site: www.ocnyang.com</string>
+    <string name="sldinglayout_bg_developer_info">©2014 - 2017  Developed by OCN.Yang</string>
+    <string name="recommend">推荐</string>
+
+    <!--Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moreforall">全部</string>
+    <string name="titlename1_context_recommend">Daily Feature</string>
+    <string name="titlename2_context_recommend">Recommendations</string>
+    <string name="header_right_recommend">附近</string>
+    <string name="loading">loading</string>
+    <string name="howmanylook">次浏览</string>
+    <string name="empty_network_error">网络错误，点击重试！</string>
+    <string name="empty_no_data">没有请求到数据，点击重试...</string>
+
+    <string name="select_browser">请选择浏览器</string>
+    <string name="no_browser_choose">没有在本机找到可供使用的浏览器！</string>
+    <string name="copysuccess">复制成功</string>
+    <string name="copyfail">复制地址出错</string>
+    <string name="last_page">已经是最后一页了。</string>
+
+    <!--类别管理-->
+    <string name="tip_drag">长按编辑,拖拽排序</string>
+    <string name="my_cahnnel">我的频道</string>
+    <string name="other_channel">更多频道</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="news_category">新闻频道</string>
+    <string name="set_success">设置成功</string>
+    <string name="news">资讯</string>
+    <string name="wechat">微信精选</string>
+    <string name="load_more_error">加载更多数据失败！</string>
+    <string name="title_activity_we_chat_details">WeChatDetailsActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="transition_wechat_img">transition_wechat_img</string>
+    <string name="find">发现</string>
+    <string name="my">我的</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_weatheraddress">天气地点设置</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="name">姓名</string>
+    <string name="editPersonInfo">编辑个人信息</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="yourSay">一句话描述</string>
+    <string name="save">保存</string>
+    <string name="address">居住地</string>
+    <string name="transition_userhead">transition_userhead</string>
+
+    <string name="title_activity_ledsingle">LEDSingleActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">小秋魔盒</string>
+
+    <string name="title_activity_ledauto">LEDAutoActivity</string>
+
+    <string name="title_activity_ledmagic">LEDMagicActivity</string>
+    <string name="title_activity_joke">笑话大全</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_random">随机笑话</string>
+    <string name="action_new">最新笑话</string>
+    <string name="loading_more_happy">加载更多快乐...</string>
+    <string name="transition_pinchimageview">transition_pinchimageview</string>
+    <string name="zxing">二维码</string>
+    <string name="title_activity_constellation">星座运势</string>
+    <string name="calendar">日历</string>
+    <string name="title_activity_china_calendar">老黄历</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="account">账号与安全</string>
+    <string name="nobind">尚未绑定</string>
+    <string name="noverification">尚未验证</string>
+    <string name="verification">已验证</string>
+    <string name="closebind">解绑 \"%1$s\" 后你将无法使用 \"%1$s\" 登录小秋魔盒，你确定要解绑吗？</string>
+
+    <!--小米用的string-->
+    <string name="ok">确认</string>
+    <string name="set_alias">设置别名</string>
+    <string name="unset_alias">撤销别名</string>
+    <string name="set_account">设置帐号</string>
+    <string name="unset_account">撤销帐号</string>
+    <string name="subscribe_topic">订阅标签</string>
+    <string name="unsubscribe_topic">撤销标签</string>
+    <string name="set_accept_time">设置时间</string>
+    <string name="pause_push">暂停推送</string>
+    <string name="resume_push">恢复推送</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+    <string name="bindphonemessage">绑定手机，账号更安全</string>
+    <string name="open_info">开源许可</string>
+    <string name="statement">声明</string>
+    <string name="statement_title">\t小秋魔盒是一款生活类（微信精选/美文/笑话/星座运势等等）、工具类（日历/二维码/手电筒/老黄历/手机号查询等等）的应用。\n
+        \tAndroid 开发者 OCNYang(欧神.杨) 的个人开发作品。\n
+        \t小秋魔盒尽量以一种简洁纯粹的界面来展现给用户，同时也尽可能多的为用户提供 生活常用的工具和服务。</string>
+    <string name="statement_userinfo">本软件提供给任何个人免费使用和分享，任何个人都有使用本软件中提供的所有功能。本软件不允许任何组织或公司用于其他用途。\n
+        在使用过程中禁止作者外的任何个人或组织或公司或其他群体对本软件进行反编译或修改。</string>
+    <string name="statement_qq">小秋魔盒是一款使用完全免费的应用，是个人闲余时间因喜好开发并通过网络分享给大家的非商业性的应用，如果用户在使用过程中发现收费的地方或者存在收费才能使用的功能请举报给作者。同时本应用的数据，来自聚合数据平台、和风天气等平台的免费开放API； 相关功能来自各个第三方开放平台；开发中使用大量开源框架，详情查看“开源许可”。\n\n
+	小秋魔盒内部使用的图标或图片，大多来自网络免费资源，如果发现存在侵权的资源，请及时联系作者，作者会及时在后续版本中去除。本着本软件从不用于商业用途，对于可能造成的侵权只付采取相应措施的责任，不负任何法律相关的责任。</string>
+
+    <string name="statement_syqhzscq">此应用及一切属于本应用的所有相关的知识产权、所有权等权利都属于 OCN.Yang 个人永久所有，在未事先获得 OCN.Yang 书面同意的情况下，你不应：\n
+        \t（Ⅰ）复制、租赁、出售、转让、分配、再授权、分解、逆向工程或反编译、修改或变更任何部分或全部的本应用；\t\n
+        \t（Ⅱ）以虚假身份或第三方身份使用本应用;\t\n
+        \t（Ⅲ）出售或以其他方式利用本应用获利；\t\n
+        \t（Ⅳ）行使其他损害 OCN.Yang 利益的行为。\t</string>
+    <string name="statement_mail">(以上是本协议的全部内容)基于本应用或本协议及相关协议、规则的任何问题，您可以随时邮件联系我们，邮箱地址：ocnyang@gmail.com</string>
+    <string name="title_activity_about_me">关于小秋魔盒</string>
+    <string name="statement_import">\t上面的协议什么的都是一些没用的话，从这里开始才是重点，才是重点，重点，重要的话说三遍：\t\n\n
+        \t 1.本应用目前是一个人开发，且为了赶上线时间，开发的比较仓促，我不得不承认，目前的版本存在很多不合理不完善的地方，这些问题都会在后续的更新中一一改善和提升。 \n
+    \t 2.本应用的数据主要来自聚合平台的免费数据，一开始作者天真的以为免费的数据随意用就行了。最后发现，聚合对不同数据每天的请求次数做了不同限制，比如笑话数据每天只有200次的请求次数，也就是说如何当你在使用的过程中发现请求不到数据了，很可能是当天的请求次数已经用完了，第二天就能正常使用了。\t\n
+    \t 3.基于上面第2条，要想提高数据的请求次数，要每月支付几百元的费用才能提高，作者也是一个初出茅庐的小生，真心支付不起。但是如果后期用户增多的话，作者会想一切办法提高数据的请求次数的。（同时如果你喜欢本应用也有能力的话，可以到“关于小秋魔盒”赞助作者部分） \t\n
+    \t 4.作者在这里像所有人承诺，作者是本着兴趣开发的本应用，绝不作为商业应用，无论什么时候，本应用不会绝不会收费，也绝不会引入广告变相收费 \t\n
+    \t 5.如果细心的朋友会发现，目前的微信精选文章中包含了大量的广告。但是请你不要先着急骂作者，这里广告是请求聚合数据网页中自带的（你可以在浏览器中打开看看，广告还是在的），并不是作者引入的（所以说，天上不会掉馅饼，免费的数据都是坑）。但是作者在后续中会想一些办法通过技术手段将这些广告去除。 \t\n
+    \t 6.这里调侃一下程序的设计问题呀，作者是一个地地道道的程序猿攻城狮，真心不会设计界面和搭配颜色，也不认识设计尸妹子。所以如果你愿意为本应用的设计提出改进的建议的话，请联系作者，或者将设计图或建议发送到我邮箱，如果得到采纳的话，会将你的大名并入共同设计的名单中。 \t\n</string>
+    <string name="wechat_select">微信精选</string>
+    <string name="title_activity_news">NewsActivity</string>
+
+
+    <!--天气模块-->
+    <string name="default_area">--</string>
+    <string name="default_time">00:00</string>
+    <string name="default_date">default_date</string>
+    <string name="default_temp">--°</string>
+    <string name="default_weather">--</string>
+
+
+    <!-- format strings for clocks -->
+    <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="main_widget_12_hours_format" translatable="false">h&#58;mm</string>
+    <string name="weather_address_setting">天气地点设置</string>
+
+    <string-array name="settings_array_notification_smallicon">
+        <item>天气状况</item>
+        <item>温度</item>
+    </string-array>
+    <string-array name="settings_array_notification_textcolor">
+        <item>系统默认</item>
+        <item>白色</item>
+        <item>黑色</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrays_led_magicstyle">
+        <item>scale</item>
+        <item>evaporate</item>
+        <item>fall</item>
+        <item>pixelate</item>
+        <item>sparkle</item>
+        <item>anvil</item>
+        <item>line</item>
+        <item>typer</item>
+        <item>rainbow</item>
+    </string-array>
+</resources>

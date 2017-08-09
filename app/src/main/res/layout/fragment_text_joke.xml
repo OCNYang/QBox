@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.ocnyang.qbox.app.module.find.joke.TextJokeFragment">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiper_textjoke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:id="@+id/recy_textjoke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

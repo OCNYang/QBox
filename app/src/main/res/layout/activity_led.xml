@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_led"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="LED 字幕">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/content_led"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="显示内容"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/fontcolor_btn_led"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_click"
+                        android:text="字体颜色"
+                        android:textColor="@color/colorPrimaryText"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/bgcolor_btn_led"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_click"
+                        android:text="背景颜色"
+                        android:textColor="@color/colorPrimaryText"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/recommendcolor_btn_led"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_click"
+                        android:text="推荐颜色"
+                        android:textColor="@color/colorPrimaryText"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/preview_led"
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textSize="50dp"/>
+                    <ImageView
+                        android:id="@+id/reverseColor_led"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|right"
+                        android:background="@drawable/corner_mark_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_autorenew_white_24dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/showstyle_radiogroup_led"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/single_radiobtn_led"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="单行滚动显示"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/single_toss_radiobtn_led"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="单行翻滚显示"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="滚动/翻滚 速度"/>
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/rollspeed_seekbar_led"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:max="10"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/adaptive_radiobtn_led"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="自适应大小显示"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="行数"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_lines_led"
+                        android:layout_width="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/colorAccent"
+                        android:layout_height="wrap_content"/>
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:id="@+id/lines_seekbar_led"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="4"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/magic_radiobtn_led"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="动效魔法效果显示(用'#'分隔两句话)"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="选择动效"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_magicstyle_led"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:entries="@array/arrays_led_magicstyle"/>
+            </RadioGroup>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/start_btn_led"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:text="开始"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

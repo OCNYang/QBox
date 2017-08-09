@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/copy_title"
+        android:title="复制标题"/>
+    <item android:id="@+id/copy_websiteaddress"
+        android:title="复制网址"/>
+    <item android:id="@+id/go_back"
+          android:title="返回"/>
+    <item android:id="@+id/go_forward"
+          android:title="前进"/>
+</menu>

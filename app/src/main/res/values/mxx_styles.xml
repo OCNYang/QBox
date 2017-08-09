@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <declare-styleable name="Theme">
+        <attr name="selectableItemBackground" format="reference" />
+        <!-- <item name="selectableItemBackground">@drawable/selectable_item_backgound</item> -->
+    </declare-styleable>
+
+    <color name="window_background">#ff131719</color>
+ <!-- ffe3e7e9 -->
+
+    <color name="mxx_white_background">#ffefeff4</color>
+    <color name="w_divider">#30ffffff</color>
+    <color name="w_divider_secondary">#10ffffff</color>
+
+    <dimen name="w_divider_size">0.5dp</dimen>
+    <dimen name="w_divider_size_secondary">0.5dp</dimen>
+
+    <color name="mxx_cell_divider">#ffd5d6d9</color>
+    <color name="mxx_cell_normal">#ffffffff</color>
+    <color name="mxx_cell_pressed">#ffe0e0e0</color>
+    <color name="mxx_text_primary">#ffffffff</color>
+    <color name="mxx_text_secondary">#ffeeeeee</color>
+    <color name="w_text_title">#ccffffff</color>
+    <color name="w_text_primary">#ffffffff</color>
+    <color name="w_text_secondary">#88ffffff</color>
+    <color name="mxx_cell_text_description">#ff6d6d72</color>
+    <color name="mxx_cell_text_title">#ffffffff</color>
+    <color name="mxx_theme">#ff303F9F</color>
+
+    <dimen name="mxx_dialog_width">300dp</dimen>
+
+    <color name="mxx_dialog_text_title">#ff000000</color>
+    <color name="mxx_dialog_text_message">#ff060606</color>
+    <color name="mxx_dialog_text_button">#ff303F9F</color>
+    <color name="mxx_view_bg_default_normal">#00000000</color>
+    <color name="mxx_view_bg_default_pressed">#a0aaaaaa</color>
+
+    <integer name="exitFadeDuration">100</integer>
+    <integer name="popupDuration">160</integer>
+
+    <style name="MxxDialogTheme" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationStyle</item>
+    </style>
+
+    <style name="DialogAnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="MxxDialogLayoutStyle">
+        <item name="android:layout_width">@dimen/mxx_dialog_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">300dp</item>
+    </style>
+    <!-- <item name="android:background">@drawable/dialog_frame</item> -->
+    <!-- 每一个 section的标题  24小时 今日详情 各种指数的标题 -->
+    <style name="w_section_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/w_text_secondary</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="w_dialog_titlebar_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/w_titlebar_size</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:textColor">@color/w_text_secondary</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="w_dialog_titlebar_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/w_text_title</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="city_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/w_text_title</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="daily_forecast_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/w_text_secondary</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="todaydetail_info_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="todaydetail_info_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/w_text_secondary</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="todaydetail_info_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/w_text_primary</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="suggestion_brf">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/w_text_primary</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginLeft">112dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="suggestion_title" parent="@style/suggestion_brf">
+        <item name="android:layout_marginLeft">56dp</item>
+    </style>
+
+    <style name="suggestion_info_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/w_text_secondary</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_marginLeft">56dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="suggestion_image">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_centerVertical">false</item>
+    </style>
+    
+    <style name="suggestion_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/w_divider_size</item>
+        <item name="android:layout_marginLeft">72dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@color/w_divider_secondary</item>
+    </style>
+
+    <style name="cell_single_item_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/w_titlebar_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/iconfont_arrow</item>
+        <item name="android:textColor">@color/w_text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="cell_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/w_titlebar_size</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/iconfont_arrow</item>
+        <item name="android:textColor">@color/w_text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MxxSettingsCellTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/mxx_cell_text_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MxxSettingsCellDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/mxx_cell_text_description</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MxxSettingsCellTitleSwitchButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    
+    <style name="MxxSettingsCellSmoothSwitch" parent="@android:style/Widget.CompoundButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/w_titlebar_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/w_text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MxxSettingsCellLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/w_titlebar_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!--
+    <style name="MxxSettingsCellLayoutBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/btn_none</item>
+    </style>
+
+    <style name="MxxSettingsCellTitleArrowImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:src">@drawable/ios_arrow_right</item>
+    </style>
+
+    -->
+
+</resources>

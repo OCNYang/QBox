@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/lunar1_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="70dp"
+        android:text="三月十五"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/date1_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:text="2017-4-11"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/chinayear1_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="150dp"
+        android:text="丁西年"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/week1_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:text="星期二"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/lunar2_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="40dp"
+        android:paddingRight="35dp"
+        android:text="三月十五"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/chinayear2_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:paddingRight="5dp"
+        android:paddingTop="80dp"
+        android:text="丁西年"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/date2_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:paddingRight="90dp"
+        android:paddingTop="140dp"
+        android:text="2017-4-11"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:paddingBottom="30dp"
+        android:paddingRight="20dp"
+        android:text="老黄历"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <TextView
+        android:id="@+id/animals1_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingBottom="10dp"
+        android:paddingLeft="200dp"
+        android:text="鸡年"
+        android:textColor="@android:color/black"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:padding="20dp"
+        android:text="老黄历"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="50dp"/>
+
+
+    <TextView
+        android:id="@+id/animals2_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fitsSystemWindows="true"
+        android:text="鸡年"
+        android:textColor="@android:color/black"
+        android:textSize="90dp"/>
+
+    <TextView
+        android:id="@+id/week2_ccheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="星期二"
+        android:textColor="@android:color/black"
+        android:textSize="110dp"/>
+</FrameLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ocnyang.qbox.app.module.setting.StatementActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_statement"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/statement"
+            app:titleTextColor="@android:color/white"/>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/statement_title"
+                android:paddingTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/Setting.Title"
+                android:text="使用说明"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/statement_userinfo"/>
+            <TextView
+                style="@style/Setting.Title"
+                android:text="侵权申明"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/statement_qq"/>
+            <TextView
+                style="@style/Setting.Title"
+                android:text="所有权和知识产权"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/statement_syqhzscq"/>
+            <TextView
+                style="@style/Setting.Title"
+                android:text="联系"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/statement_mail"/>
+            <TextView
+                android:textSize="10sp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/colorPrimary"
+                android:lines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+                android:gravity="center_horizontal"
+                android:ellipsize="middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/Setting.Title"
+                android:text="重点"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/statement_import"/>
+
+            <TextView
+                android:paddingTop="20dp"
+                android:textColor="@color/secondary_text"
+                android:textSize="10sp"
+                android:text="OCN.Yang | www.ocnyang.com"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

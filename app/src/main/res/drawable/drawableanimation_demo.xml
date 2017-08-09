@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这里是一个模板 Drawable动画其实就是Frame帧动画-->
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"><!--true"执行一次 | "false" 循环执行-->
+
+    <!--drawable = @[package:]drawable/drawable_resource_name-->
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="2000"/><!--duration 这个frame显示的时间-->
+
+    <item
+        android:drawable="@color/colorAccent"
+        android:duration="2000"/>
+</animation-list>
+    <!--使用方法：
+    ImageView rocketImage = (ImageView) findViewById(R.id.rocket_image);
+    rocketImage.setBackgroundResource(R.drawable.rocket_thrust);
+
+    rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
+    rocketAnimation.start();
+
+    特别注意，AnimationDrawable的start()方法不能在Activity的onCreate方法中调运，
+    因为AnimationDrawable还未完全附着到window上，所以最好的调运时机是onWindowFocusChanged()方法中。
+    -->

@@ -1,0 +1,293 @@
+本架构集成的各个框架的使用说明
+
+@versionCode 1
+@versionName "1.0.0"
+
+Logger 日志打印
+**************************************************************************
+初始化：
+Logger.init();//在application中
+
+用法方式：
+Logger.d("hello");
+Logger.e("hello");
+Logger.w("hello");
+Logger.v("hello");
+Logger.wtf("hello");
+Logger.json(JSON_CONTENT);
+Logger.xml(XML_CONTENT);
+Logger.log(DEBUG, "tag", "message", throwable);
+
+参数设置：
+Logger
+.init(YOUR_TAG)                 // default PRETTYLOGGER or use just init()
+.methodCount(3)                 // default 2
+.hideThreadInfo()               // default shown
+.logLevel(LogLevel.NONE)        // default LogLevel.FULL
+.methodOffset(2)                // default 0
+.logAdapter(new AndroidLogAdapter()); //default AndroidLogAdapter
+***************************************************************************
+
+
+//Material design的兼容库
+    /*gson数据解析*/
+    /*view依赖注入框架*/
+    /*内存泄漏检测工具*/
+    /**
+     *  Android 6.0运行时权限
+     *  https://github.com/hotchemi/PermissionsDispatcher
+     */
+    /*Logger*/
+    /*Glide图片加载框架*/
+    /*圆形图片控件*/
+    /**
+     *  Rxjava + Retrofit + okhttp 网络请求框架所需要的包
+     *  基本的使用，不做三者的封装（因为目前还找不到好的封装框架）
+     *  使用参考地址：https://github.com/rengwuxian/RxJavaSamples
+     */
+    /*okhttp3*/
+    /*retrofit2*/
+    /*rxjava*/
+    /**
+     *  SlidingTutorial-Android 引导页库
+     *  项目地址：https://github.com/Cleveroad/slidingtutorial-android
+     *
+     */
+    //百分比布局
+    /**
+     * 开源动画库 nineoldandrolid
+     *
+     * slidinglayout 果冻效果弹跳布局依赖此库
+     */
+    /**
+     * reactivenetwork 网络动态变化检测库
+     *
+     * 主要用来检测网络，当网络变化时产生 自动显示网络错误布局，非WiFi状态下不加载图片等等逻辑
+     *
+     */
+    /**
+     * AndroidImageSlider轮滑图片
+     * github
+     */
+    /*卡片布局*/
+
+
+
+
+轮播图片
+***************************************************************************未添
+项目地址（带标题）：
+https://github.com/daimajia/AndroidImageSlider
+使用说明：
+https://github.com/daimajia/AndroidImageSlider/blob/master/demo%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdaimajia%2Fslider%2Fdemo%2FMainActivity.java
+
+项目地址（不带标题）
+https://github.com/Jude95/RollViewPager
+***************************************************************************
+
+
+
+
+圆形图片控件
+***************************************************************************
+一个纯控件，支持的属性设置只有边框那两个
+并且默认ScaleType="CENTER_CROP"不能修改；adjustViewBounds不能设置；Glide等图片加载框架不能设置动画效果
+<de.hdodenhof.circleimageview.CircleImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_image"
+    android:layout_width="96dp"
+    android:layout_height="96dp"
+    android:src="@drawable/profile"
+    app:civ_border_width="2dp"
+    app:civ_border_color="#FF000000"/>
+***************************************************************************
+
+
+
+
+Material design兼容库
+***************************************************************************
+布局中：
+在所有可能显示在顶部的控件设置：android:fitsSystemWindows="true"
+
+只包含8中控件，其中RecycleView在V7包中，CardView需要另外导入
+AppBarLayout、
+CollapsingToolbarLayout、
+CoordinatorLayout，
+FloatingActionButton、
+NavigationView、
+Snackbar、
+TabLayout、
+TextInputLayout
+***************************************************************************
+
+
+
+
+
+沉浸式状态栏
+***************************************************************************
+项目地址：
+http://blog.csdn.net/lmj623565791/article/details/48649563
+注意三点：
+ToolBar高度设置为wrap_content
+ToolBar添加属性android:fitsSystemWindows="true"
+header_just_username.xml的跟布局RelativeLayout，添加属性android:fitsSystemWindows="true"
+android:fitsSystemWindows这个属性，主要是通过调整当前设置这个属性的view的padding去为我们的status_bar留下空间。
+
+为了Android4.4适配：
+那么只需要在Activity里面去写上（设置Toolbar之后）：StatusBarCompat.compat(this);就可以了。
+
+如果你希望自己设置状态看颜色，那么就用这个方法：
+StatusBarCompat.compat(this, getResources().getColor(R.color.status_bar_color));
+
+关于沉浸式的说明，6.0及以上不能达到半透明的效果。
+同时沉浸式和夜间模式结合要考虑两方面。
+
+具体差别请看V21/style
+***************************************************************************
+
+
+
+
+
+
+Android应用自动更新库(android-auto-update)
+***************************************************************************
+项目地址：https://github.com/feicien/android-auto-update
+
+用法：
+1.导入library项目（本项目是直接把library直接复制放在了 /update 目录下）
+2.提供2种版本检查方式,在你的项目中添加以下代码即可
+使用Dialog  `UpdateChecker.checkForDialog(this);`
+使用Notification  UpdateChecker.checkForNotification(this);
+2.添加权限
+添加访问网络的权限<uses-permission android:name="android.permission.INTERNET" />
+添加写SDCard权限（可选，非必须）
+如果添加这个权限 apk下载在sdcard中的Android/data/包名/cache目录下 否则下载到 内存中的 /data/data/包名/cache中
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+***************************************************************************
+
+
+@versionCode 8
+@versionName "2.0.0"
+
+Rxjava + Retrofit + okhttp 网络请求框架
+***************************************************************************2016/10/10 pm
+原生态无封装的使用
+使用方法参考Demo：https://github.com/rengwuxian/RxJavaSamples
+***************************************************************************
+
+
+
+
+SlidingTutorial-Android引导页
+***************************************************************************2016/10/11 pm
+根据Demo直接使用，可定制的东西很少，当然引导页本身也没什么可定制的，
+就看自己喜欢不喜欢这个引导页的设计了
+项目地址：https://github.com/Cleveroad/slidingtutorial-android
+
+这个引导页在布局上用到的全是百分比布局
+需要自己定制的可能是最后一页添加一个按钮的点击事件
+***************************************************************************
+
+
+
+
+Slidinglayout 果冻弹跳效果
+***************************************************************************2016/10/13 am
+依赖nineoldandorid开源动画库
+Slidinglayout其实就是一个自定义的布局
+
+XML样式参数：
+background_view 背景view
+sliding_mode 滑动模式，both为上下可弹跳，top为顶部弹跳，bottom为底部弹跳，默认为both
+sliding_pointer_mode 手指模式，one为只识别一个手指，more为支持多指滑动，默认为more
+top_max 当滑动模式为top时才有效，用于可滑动的最大距离，如"top_max:200dp"，默认为-1（不限制）
+
+常用API：
+public void setSlidingOffset(float slidingOffset) 设置控件的滑动阻力，有效值为0.1F~1.0F，值越小阻力越大，默认为0.5F
+public void setTargetView(View view) 设置控件的前景View
+public void setBackgroundView(View view) 设置控件的背景View
+public void setSlidingListener(SlidingListener slidingListener) 给控件设置监听，可以监听滑动情况
+public void setSlidingMode(int mode) 设置滑动模式
+public void setSlidingDistance(int max) 设置最大滑动距离，仅在top模式下有效
+
+***************************************************************************
+
+
+
+
+
+
+ReactiveNetwork网络动态检测库
+***************************************************************************2016/10/13 pm
+项目地址：https://github.com/pwittchen/ReactiveNetwork
+
+网络的检测逻辑的代码放在了BaseActivity中，
+网络变化时，需要自动显示网络错误的布局主要继承这个Base类就行了，
+同时这个类开放的有网络变化时的回调接口。
+
+自动显示网络错误的布局的几种设想：
+第一种：当网络无连接时可以显示一个大的网络错误布局，
+或者跳转到一个网络错误布局，当网络连接上的时候再自动跳转回来
+（用户也可以通过点击返回，在无网络的情况下的页面）。
+第二种：当网络无连接、网络请求数据错误时都显示一个小警示布局提醒网络错误。
+第三种：上面两种结合在一起，同时在网络请求数据错误的时候，就加载一定数量的
+网络错误数据集合。
+***************************************************************************
+
+
+
+
+
+
+
+夜间主题（仿知乎/改变主题的方式）
+***************************************************************************
+博客参考地址：http://www.jianshu.com/p/3b55e84742e5
+项目地址：https://github.com/D-clock/AndroidStudyCode
+
+DayNightActivity的例子的方式是在设置页的的代码方式。
+在其他有夜间模式的页面，只要在setcontentView之前判断目前设置的模式然后设置
+此种模式就行了。即实现initData();initTheme();方法就行了，同时可以在BaseActivity
+中实现。
+***************************************************************************
+
+
+
+
+
+
+
+主导航页面（设计思路）
+***************************************************************************
+下面具有导航栏的主体app的设计思路。
+由于这种导航是一级导航，目前不建议在app的一级页面就采用viewpager+Fragment或
+导航栏+Fragment的形式设计。
+建议采用独立activity+include布局
++android:launchMode="singleTask"
++theme:<item name="android:windowAnimationStyle">@style/noAnimation</item>(取消activity跳转自带的原生动画)
+的形式
+这样的好处：能将每个一级功能分类页相互分离开来不相互影响。经过观察和猜想
+知乎采用的应该是这种方式。这样的方式也能达到和上面一样的效果，同时又解决了
+Fragment带来的不便。
+
+关于主导航页返回键的监听处理方式：
+一种是在每个主导航页中设置监听，点击一次没反应，连点击两次退出程序。
+另外一种：点击一次返回到main主导航页面，在main页面点击一次直接退出程序（这
+也是知乎实现的方式，同时因为在main页面点击一次就直接退出了，所以在其他主导航
+页面如果连续点击两次也能达到直接退出程序的效果。）
+***************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+

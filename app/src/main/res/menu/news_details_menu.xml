@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/open_on_browser"
+          android:icon="@drawable/ic_launcher"
+          android:title="在浏览器中打开"
+          app:showAsAction="never"/>
+    <item android:id="@+id/share"
+          android:icon="@drawable/ic_launcher"
+          android:title="分享"
+          app:showAsAction="never"/>
+    <item android:id="@+id/refresh"
+          android:icon="@drawable/ic_refresh_white_18dp"
+          android:title="刷新"
+          app:showAsAction="always"/>
+    <item android:id="@+id/copy_url"
+          android:icon="@drawable/ic_launcher"
+          android:title="复制网址"
+          app:showAsAction="never"/>
+</menu>

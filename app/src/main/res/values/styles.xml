@@ -1,0 +1,250 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="RootAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="clockBackground">@android:color/white</item>
+        <item name="clockTextColor">@android:color/black</item>
+    </style>
+
+    <style name="StartTheme" parent="RootAppTheme">
+        <item name="android:windowBackground">@drawable/startbg</item>
+    </style>
+
+    <style name="HomeTheme" parent="RootAppTheme">
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!-- 夜间模式的设置 --><!--目前的颜色设置的并不是很全面-->
+    <!--白天主题，此处直接和AppTheme一样-->
+    <!--夜间主题-->
+    <style name="NightThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color3F3F3F</item>
+        <item name="colorPrimaryDark">@color/color3A3A3A</item>
+        <item name="colorAccent">@color/color868686</item>
+
+        <item name="clockBackground">@color/color3F3F3F</item>
+        <item name="clockTextColor">@color/color8A9599</item>
+    </style>
+
+    <style name="AppTheme" parent="RootAppTheme"/>
+
+    <style name="DayTheme" parent="RootAppTheme"/>
+
+    <style name="NightTheme" parent="NightThemeBase"/>
+
+    <style name="DrawerHeaderTheme" parent="AppTheme"/>
+
+    <style name="ActionBarAppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="clockBackground">@android:color/white</item>
+        <item name="clockTextColor">@android:color/black</item>
+    </style>
+
+
+    <!--标题栏样式-->
+    <style name="TitleBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <!--标题栏字体样式-->
+    <style name="TitleBarText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--星期单选框样式-->
+    <style name="WeekCheckbox">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="WebTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle
+        </item> <!--新增一个item，用于控制menu-->
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="selectableItemBackground">@drawable/toolbar_button_bg</item>
+    </style>
+
+    <!-- toolbar标题样式 --><!--app:titleTextAppearance="@style/ToolbarTitle"-->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+        <item name="selectableItemBackground">@drawable/toolbar_button_bg</item>
+    </style>
+
+    <!-- toolbar菜单文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="HintInputTextStyle">
+        <item name="android:background">@color/white_ccffffff</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="Setting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Setting.Title">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Setting.Linear">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/shape_bg_click</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="Setting.Name">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="Setting.Info">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="Setting.Linear.Name">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar-->
+        <item name="searchBackground">@color/colorPrimary</item>
+
+        <!-- Change voice icon-->
+        <item name="searchVoiceIcon">@drawable/ic_action_voice_search_inverted</item>
+
+        <!-- Change clear text icon-->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+
+        <!-- Change up icon-->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+
+        <!-- Change icon for the suggestions-->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+
+        <!-- Change background for the suggestions list view-->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor-->
+        <item name="android:textColor">@color/theme_primary_text_inverted</item>
+
+        <!-- Change hint text color for edit text-->
+        <item name="android:textColorHint">@color/theme_secondary_text_inverted</item>
+
+        <!-- Hint for edit text-->
+        <item name="android:hint">@string/search_hint</item>
+    </style>
+
+    <style name="aboutme">
+        <item name="android:textColor">#555555</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="aboutme.title">
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="aboutme.text">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <!--天气模块-->
+    <style name="WeatherBaseTheme" parent="android:Theme">
+    </style>
+
+    <!-- Application theme. -->        <!--<item name="android:windowBackground">@drawable/window_frame</item>-->
+
+    <style name="WeatherTheme" parent="WeatherBaseTheme">
+        <item name="android:divider">@color/w_divider</item>
+        <item name="android:dividerHeight">@dimen/w_divider_size</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/selectable_item_backgound</item>
+        <item name="selectableItemBackground">@drawable/selectable_item_backgound</item>
+    </style>
+</resources>

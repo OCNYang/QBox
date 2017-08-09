@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:paddingBottom="3dp"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_height="0.5dp"/>
+    <ImageView
+        android:id="@+id/icon_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menubar_height"/>
+    <TextView
+        android:id="@+id/name_tabbar"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="@drawable/tabbar_tvcolor_mains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

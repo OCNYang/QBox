@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MapTextView">
+        <attr name="keyText" format="string"/>
+        <attr name="valueText" format="string"/>
+
+        <attr name="keyTextColor" format="color"/>
+        <attr name="valueTextColor" format="color"/>
+        <attr name="keyBackgroundColor" format="color"/>
+
+        <attr name="circleColor" format="color"/>
+
+        <attr name="keyText_size" format="dimension"/>
+        <attr name="valueText_size" format="dimension"/>
+        <attr name="isUniformColor" format="boolean"/>
+    </declare-styleable>
+</resources>

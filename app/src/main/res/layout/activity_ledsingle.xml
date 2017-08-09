@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:customAttr="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.ocnyang.qbox.app.module.me.LEDSingleActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <!--<TextView-->
+    <!--android:id="@+id/fullscreen_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:keepScreenOn="true"-->
+    <!--android:text="@string/dummy_content"-->
+    <!--android:textColor="#33b5e5"-->
+    <!--android:textSize="50sp"-->
+    <!--android:textStyle="bold"/>-->
+
+    <com.ocnyang.qbox.app.widget.custom.ScrollTextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:keepScreenOn="true"
+        customAttr:clickEnable="true"
+        customAttr:isHorizontal="true"
+        customAttr:speed="3"
+        customAttr:text="@string/app_name"
+        customAttr:textColor="#ffffffff"
+        customAttr:textSize="50sp"
+        customAttr:times="567"/>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!--<Button-->
+            <!--android:id="@+id/dummy_button"-->
+            <!--style="?metaButtonBarButtonStyle"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/dummy_button"/>-->
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="100"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

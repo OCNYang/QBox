@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--适合白色字体的彩虹色-->
+    <integer-array name="itemcolor">
+        <item>0xFF79429D</item>
+        <item>0xFF5691F5</item>
+        <item>0xFF76BA55</item>
+        <item>0xFFB3E0E0</item>
+        <item>0xFF27C9C2</item>
+        <item>0xFF92AD6B</item>
+        <item>0xFFEC4F4F</item>
+        <item>0xFFEE6593</item>
+        <item>0xFFFFAC5A</item>
+        <item>0xFF6296AF</item>
+        <item>0xFFBF8A28</item>
+        <item>0xFF319388</item>
+    </integer-array>
+</resources>

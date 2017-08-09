@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/find_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.ocnyang.qbox.app.module.find.FindFragment">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/bg_find_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transition_pinchimageview"
+        android:src="@color/colorPrimaryDark"/>
+
+
+    <com.ocnyang.qbox.app.widget.slidinglayout.SlidingLayout
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:sliding_mode="top"
+        app:top_max="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:weightSum="8">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycler_find"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="0"/>
+
+            <LinearLayout
+                android:id="@+id/thefooter_find"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/joke_find"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="日行一笑"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/xiaohua_find"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:lineSpacingMultiplier="1.1"
+                        android:textSize="12sp"
+                        android:text="两人分手后多年，在一个城市不期而遇。\n男/女：“你好吗”。女/男：“好”。\n男/女：“他/她好吗”。女/男：“好”。\n女/男的问：“你好吗”。男/女的回答：“好”。\n女/男的问：“她/他好吗”。男/女：“她/他刚才告诉我她/他很好”。"
+                        android:textColor="@color/secondary_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wannianli_find"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/fragment_find_calendar"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/star_find"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:text="今日星座运势"/>
+
+                    <TextView
+                        android:id="@+id/qfriend_star_find"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_qbt"
+                        android:gravity="center_vertical"
+                        android:text="白羊座"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/yunshi_star_find"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.1"
+                        android:textSize="12sp"
+                        android:padding="2dp"
+                        android:textColor="@color/secondary_text"/>
+                    <TextView
+                        android:id="@+id/xz_star_find"
+                        android:gravity="right"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="5dp"
+                        android:text="-水瓶座"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/menubar"/>
+        </LinearLayout>
+    </com.ocnyang.qbox.app.widget.slidinglayout.SlidingLayout>
+    <TextView
+        android:id="@+id/bg_title_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:lines="2"
+        android:fitsSystemWindows="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bg_title_find"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/before_find"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/shape_button_bg_find"
+            android:src="@drawable/ic_navigate_before_white_24dp"/>
+
+        <ImageButton
+            android:id="@+id/next_find"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/shape_button_bg_find"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_navigate_next_white_24dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

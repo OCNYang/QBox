@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--{"头条", "社会", "国内", "国际", "娱乐",
+    "体育", "军事", "科技", "财经", "时尚", "微信精选"}-->
+    <string-array name="category_name">
+        <item>头条</item>
+        <item>社会</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>军事</item>
+        <item>科技</item>
+        <item>财经</item>
+        <item>时尚</item>
+    </string-array>
+    <string-array name="category_type">
+        <item>top</item>
+        <item>shehui</item>
+        <item>guonei</item>
+        <item>guoji</item>
+        <item>yule</item>
+        <item>tiyu</item>
+        <item>junshi</item>
+        <item>keji</item>
+        <item>caijing</item>
+        <item>shishang</item>
+    </string-array>
+</resources>

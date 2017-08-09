@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/year_view"
+        android:orderInCategory="100"
+        android:title="年视图"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/skip_to_day"
+        android:orderInCategory="100"
+        android:title="定位日期"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/holidays"
+        android:orderInCategory="100"
+        android:title="法定节假日"
+        app:showAsAction="never"/>
+
+</menu>

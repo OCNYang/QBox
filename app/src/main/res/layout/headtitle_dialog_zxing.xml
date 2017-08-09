@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:paddingBottom="15dp"
+              android:background="@android:color/white"
+              android:paddingLeft="20dp"
+              android:paddingRight="10dp"
+              android:paddingTop="20dp">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="扫描结果"/>
+
+    <TextView
+        android:id="@+id/copy_dialog_zxing"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_click"
+        android:padding="10dp"
+        android:text="复制结果"
+        android:textColor="@color/colorAccent"/>
+</LinearLayout>

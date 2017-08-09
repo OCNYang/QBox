@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_account"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/account"
+            app:titleTextColor="@android:color/white"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Setting.Title"
+                android:text="小秋魔盒账号"/>
+
+            <LinearLayout
+                android:id="@+id/phone_account"
+                style="@style/Setting.Linear"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Setting.Name"
+                        android:text="手机"/>
+
+                    <TextView
+                        android:id="@+id/phonebindinfo_account"
+                        style="@style/Setting.Info"
+                        android:text="@string/bindphonemessage"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/phonebindtext_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/noverification"
+                    android:textColor="@color/secondary_text"/>
+
+                <ImageView
+                    android:id="@+id/phonebindimg_account"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/certification_no"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_color"/>
+
+            <LinearLayout
+                android:id="@+id/changepassword_account"
+                style="@style/Setting.Linear"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Setting.Name"
+                    android:text="账号密码"/>
+
+                <TextView
+                    style="@style/Setting.Info"
+                    android:ellipsize="end"
+                    android:text="修改密码"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/Setting.Title"
+                android:text="社交账号"/>
+
+            <LinearLayout
+                android:id="@+id/weibo_account"
+                style="@style/Setting.Linear"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Setting.Name"
+                        android:text="新浪微博"/>
+
+                    <TextView
+                        android:id="@+id/weiboname_account"
+                        style="@style/Setting.Info"
+                        android:text="@string/nobind"/>
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_weibo_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wechat_account"
+                style="@style/Setting.Linear"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Setting.Name"
+                        android:text="微信"/>
+
+                    <TextView
+                        android:id="@+id/wechatname_account"
+                        style="@style/Setting.Info"
+                        android:text="@string/nobind"/>
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_wechat_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qq_account"
+                style="@style/Setting.Linear"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Setting.Name"
+                        android:text="QQ"/>
+
+                    <TextView
+                        android:id="@+id/qqname_account"
+                        style="@style/Setting.Info"
+                        android:text="@string/nobind"/>
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_qq_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/year_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="2017年4月"
+            android:textColor="#ff0000"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/years_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="鸡.丁西年"
+            android:textColor="#ff0000"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/day_clendar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="11"
+        android:textColor="#ff0000"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nongli_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="农历三月十五日"
+            android:textColor="#ff0000"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/jieri_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="伊秋节"
+            android:textColor="#ff0000"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#ff0000"/>
+
+    <TextView
+        android:id="@+id/week_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="星期二"
+        android:textColor="#ff0000"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff0000"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="宜"
+                android:textColor="#ff0000"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/yi_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="9"
+                android:ellipsize="middle"
+                android:padding="2dp"
+                android:text="嫁娶"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#ff0000"
+                android:text="忌"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/ji_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:maxLines="9"
+                android:ellipsize="middle"
+                android:text="离别"
+                android:textSize="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

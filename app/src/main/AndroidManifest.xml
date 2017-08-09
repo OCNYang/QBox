@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.ocnyang.qbox.app">
+
+    <!-- 需要动态申请的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 后台自动授予的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- 小米推送配置 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <permission
+        android:name="com.ocnyang.qbox.app.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ocnyang.qbox.app.permission.MIPUSH_RECEIVE"/>
+    <!-- 小米推送配置 -->
+
+    <!-- ShareSDK 配置 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- ShareSDK 配置 -->
+
+    <!-- SMS_SDK配置 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- SMS_SDK 配置 -->
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".Html5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebTheme"/>
+        <activity
+            android:name=".module.start.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.start.welcome.WelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.mains.MainsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.news_details.NewsDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.news_category.CategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.wechat.WeChatDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerHeaderTheme"/>
+        <activity
+            android:name=".module.find.FindMoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.setting.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.UserInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.LEDActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.LEDSingleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ledsingle"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme"/>
+        <activity
+            android:name=".module.me.LEDAutoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ledauto"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity
+            android:name=".module.me.LEDMagicActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ledmagic"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity
+            android:name=".module.find.joke.JokeActivity"
+            android:label="@string/title_activity_joke"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".module.pinchimage.PinImageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.FlashActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.ZxingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.me.ZxingStartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.find.QueryInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.find.constellation.ConstellationActivity"
+            android:label="@string/title_activity_constellation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".module.me.CalendarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.find.chinacalendar.ChinaCalendarActivity"
+            android:label="@string/title_activity_china_calendar"
+            android:screenOrientation="portrait"
+            android:theme="@style/DrawerHeaderTheme">
+        </activity>
+        <activity
+            android:name=".module.setting.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".module.setting.AccountActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 小米推送 service和receiver 配置 -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice"/>
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice"/>
+        <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true"/>
+        <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <!-- 小米推送 service和receiver 配置 -->
+
+        <!-- 小米推送 BroadcastReceiver 自定义 -->
+        <receiver
+            android:name=".broadcastreceiver.XiaomiMessageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <!-- 小米推送 BroadcastReceiver 自定义 -->
+
+        <!-- ShareSDK 必要的Activity 配置 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- ShareSDK 必要的Activity 配置 -->
+
+        <activity
+            android:name=".module.me.AddressActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.setting.WebPageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.setting.StatementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".module.setting.AboutMeActivity"
+            android:label="@string/title_activity_about_me"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".module.me.weather.weather.WeatherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WeatherTheme">
+        </activity>
+        <activity
+            android:name=".module.setting.WeatherAddressActivity"
+            android:label="@string/title_activity_weatheraddress"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 友盟统计配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58df1be8734be45f5d0012d2"/>
+        <meta-data
+            android:name="${UMENG_CHANNEL_VALUE}"
+            android:value="Channel ID"/>
+        <!-- 友盟统计配置 -->
+    </application>
+
+</manifest>

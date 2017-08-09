@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ocnyang.qbox.app.module.me.ZxingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_zxing"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="@string/zxing"
+        app:titleTextColor="@android:color/white">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/all_zxing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_bg_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="17dp"
+                    android:text="通用扫码"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全能识别"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/text_zxing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_bg_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="17dp"
+                android:layout_marginBottom="1dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="17dp"
+                    android:text="扫取文本"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="纯文本"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/web_zxing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_bg_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="1dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="17dp"
+                    android:text="打开网址"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网站、名片、商品···"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/download_zxing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_bg_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="1dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="17dp"
+                    android:text="下载文件"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App下载、文件获取、压缩包···"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_zxing"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_bg_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="1dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="17dp"
+                    android:text="获取图片"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示图片、GIF动画···"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

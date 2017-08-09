@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="widget_time_text_size">56dp</dimen>
+    <dimen name="widget_content_text_size">14dp</dimen>
+    <dimen name="widget_temp_text_size">24dp</dimen>
+
+    <dimen name="widget_big_textsize">70.0dip</dimen>
+    <dimen name="widget_city_padding_describe">7.1999817dip</dimen>
+    <dimen name="widget_city_text_max_width">200.0dip</dimen>
+    <dimen name="widget_city_text_padding_bottom">3.5dip</dimen>
+    <dimen name="widget_city_text_padding_left">10.0dip</dimen>
+    <dimen name="widget_city_text_padding_top">45.399994dip</dimen>
+    <dimen name="widget_city_text_size">16.0sp</dimen>
+    <dimen name="widget_city_width">144.0dip</dimen>
+    <dimen name="widget_container_margin_left">15.0dip</dimen>
+    <dimen name="widget_container_margin_right">15.0dip</dimen>
+    <dimen name="widget_container_margin_top">64.0dip</dimen>
+    <dimen name="widget_date_margin_top">21.0dip</dimen>
+    <dimen name="widget_degree_img_margin_left">-5.0dip</dimen>
+    <dimen name="widget_degree_text_padding_right">17.199982dip</dimen>
+    <dimen name="widget_degree_text_padding_top">17.199982dip</dimen>
+    <dimen name="widget_degree_text_size">50.0sp</dimen>
+    <dimen name="widget_frame_padding_bottom">0.8000001dip</dimen>
+    <dimen name="widget_frame_padding_horizontal">15.0dip</dimen>
+    <dimen name="widget_frame_padding_top">1.5999756dip</dimen>
+    <dimen name="widget_icon_margin_left">18.0dip</dimen>
+    <dimen name="widget_icon_size">57.0dip</dimen>
+    <dimen name="widget_locale_margin_top">3.5dip</dimen>
+    <dimen name="widget_middle_textsize">24.0dip</dimen>
+    <dimen name="widget_search_engine_tag_text_size">14.0sp</dimen>
+    <dimen name="widget_search_icon_padding_bottom">6.399994dip</dimen>
+    <dimen name="widget_search_icon_padding_left">15.199982dip</dimen>
+    <dimen name="widget_search_tag_height">38.799988dip</dimen>
+    <dimen name="widget_search_tag_text_margin_top">0.0dip</dimen>
+    <dimen name="widget_search_tag_text_padding_right">17.199982dip</dimen>
+    <dimen name="widget_search_widget_text_height">38.799988dip</dimen>
+    <dimen name="widget_small_textsize">28.0dip</dimen>
+    <dimen name="widget_temp_bottom_margin_top">12.0dip</dimen>
+    <dimen name="widget_temp_degree_img_height_and_width">42.0dip</dimen>
+    <dimen name="widget_temp_marting_top">16.0dip</dimen>
+    <dimen name="widget_temp_na_padding_right">13.0dip</dimen>
+    <dimen name="widget_weather_icon_padding_left">260.0dip</dimen>
+    <dimen name="widget_weather_icon_padding_top">10.0dip</dimen>
+    <dimen name="width_of_glow_view">300.0dip</dimen>
+    <dimen name="width_of_glow_view_h">214.0dip</dimen>
+    <dimen name="wind_padding_img_right">7.0dip</dimen>
+    <dimen name="wind_padding_img_top">3.7999878dip</dimen>
+    <dimen name="wind_padding_top">300.0dip</dimen>
+    
+    <color name="white_alpha_60">#99ffffff</color>
+    <color name="white_alpha_80">#ccffffff</color>
+    <color name="widget_text_color">#ffffffff</color>
+
+</resources>

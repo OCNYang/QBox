@@ -1,0 +1,21 @@
+<resources>
+    <style name="AppTheme" parent="RootAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+    <style name="DayTheme" parent="RootAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+    <style name="NightTheme" parent="NightThemeBase">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="WeatherBaseTheme" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+</resources>

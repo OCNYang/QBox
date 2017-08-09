@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="clockBackground" format="color"/>
+    <attr name="clockTextColor" format="color"/>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_radius" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_background" format="color|integer"/>
+        <attr name="ci_selected_background" format="color|integer"/>
+        <attr name="ci_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ci_mode">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+            <enum name="solo" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MxxPagerTitleStrip">
+        <attr name="pts_radius" format="dimension"/>
+        <attr name="pts_margin" format="dimension"/>
+        <attr name="pts_background" format="color|integer"/>
+        <attr name="pts_selected_background" format="color|integer"/>
+        <attr name="pts_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

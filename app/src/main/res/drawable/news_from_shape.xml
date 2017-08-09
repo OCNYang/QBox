@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+       android:visible="true">
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"
+        android:radius="9dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"/><!-- 设置圆角半径 -->
+    <!-- 描边，边框 -->
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/colorPrimary"
+        android:dashGap="1dp"
+        android:dashWidth="3dp"/><!--dashGap虚线段的间距、dashWidth虚线段的长度-->
+</shape>

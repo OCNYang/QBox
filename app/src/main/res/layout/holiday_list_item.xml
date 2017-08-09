@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:background="@drawable/shape_bg_click"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/name_holiday_item"
+        android:text="春节"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/info_holiday_item"
+        android:text="kjdjdk"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:ellipsize="end"
+        android:textColor="@color/secondary_text"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval"
+       android:visible="true">
+    <!-- 大小 -->
+    <size
+        android:width="20dp"
+        android:height="20dp"/><!-- 宽度和高度 -->
+
+    <!-- 填充 -->
+    <solid
+        android:color="@color/colorPrimary"/><!-- 填充的颜色 -->
+
+
+    <!-- 间隔 -->
+    <padding
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp"/><!-- 各方向的间隔 -->
+</shape>

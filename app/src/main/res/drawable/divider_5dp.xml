@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+       android:visible="true">
+    <size
+        android:height="5dp"/><!-- 宽度和高度 -->
+    <solid
+        android:color="@android:color/transparent"/><!-- 填充的颜色 -->
+
+</shape>

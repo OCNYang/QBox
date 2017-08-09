@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bgimg">
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (1).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (2).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (3).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (4).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (5).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (6).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (7).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (8).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (9).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (10).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (11).jpg</item>
+        <item>http://obbu6r1mi.bkt.clouddn.com/qbox/mm/mm (12).jpg</item>
+    </string-array>
+</resources>

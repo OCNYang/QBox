@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:stateListAnimator="@animator/raise">
+
+    <com.ocnyang.qbox.app.widget.FourThreeImageView
+        android:id="@+id/img_areaset_item"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/bg2"/>
+
+    <TextView
+        android:id="@+id/name_areaset_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_accessibility_white_24dp"/>
+
+        <TextView
+            android:id="@+id/province_areaset_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="河南"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="•"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/city_areaset_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汝南"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</FrameLayout>
