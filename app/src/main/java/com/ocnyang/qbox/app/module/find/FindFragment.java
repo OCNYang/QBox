@@ -129,7 +129,6 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
     Observer<Constellation> mConstellationObserver = new Observer<Constellation>() {
         @Override
         public void onCompleted() {
-            Logger.e("constellation-complete");
         }
 
         @Override
@@ -140,7 +139,7 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
         @Override
         public void onNext(Constellation constellation) {
             if (constellation.getError_code() == 0) {
-                Logger.e(constellation.getQFriend());
+                Logger.e("星座："+constellation.getQFriend()+constellation.getSummary());
                 showConstellation(constellation);
             }
         }
@@ -193,7 +192,7 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
 
         @Override
         public void onError(Throwable e) {
-
+            Logger.e("每日一笑："+e.getMessage());
         }
 
         @Override
@@ -205,6 +204,7 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
 
     private void showDayJoke(DayJoke.ResultBean.DataBean dataBean) {
         String jokeContent = dataBean.getContent();
+        Logger.e("每日一笑："+jokeContent);
         if (!TextUtils.isEmpty(jokeContent))
             mXiaohuaFind.setText(jokeContent);
     }
@@ -327,7 +327,7 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
 
         if (starIsOpen) {
             mStarFind.setVisibility(View.VISIBLE);
-            String starName = (String) SPUtils.get(getContext(), Const.STAR_NAME, "水瓶座");
+            String starName = (String) SPUtils.get(getContext(), Const.USER_STAR, "水瓶座");
             mXzStarFind.setText("-"+starName);
             mStarFind.setOnClickListener(this);
             requestStarData(starName);
