@@ -8,7 +8,7 @@
 
 小秋魔盒（QBox）是一个生活工具 Android App，由 OCN.Yang 开发，第一个版本上线时间：2017.04.11  
 
-一款简约纯净有爱的生活工具类App。  
+A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **Fork**)  
 
 [![Version Code](https://img.shields.io/badge/Version%20Code-4-brightgreen.svg)](https://github.com/OCNYang/QBox)  
 [![Version Name](https://img.shields.io/badge/Version%20Name-v1.6%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
