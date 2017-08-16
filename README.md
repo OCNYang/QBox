@@ -13,7 +13,8 @@
 [![Version Code](https://img.shields.io/badge/Version%20Code-4-brightgreen.svg)](https://github.com/OCNYang/QBox)  
 [![Version Name](https://img.shields.io/badge/Version%20Name-v1.6%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
 
-下载地址 | APK Download：
+#### 下载地址 | APK Download：
+
 **地址一：**[http://fir.im/qbox](http://fir.im/qbox)  
 **地址二：**[https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
 
@@ -46,7 +47,7 @@
 * [Document | 说明文档](https://github.com/OCNYang/QBox/wiki)
 
 ## 更多地方找到本文   
-<br>
+
 [![简书](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-http%3A%2F%2Fwww.jianshu.com%2Fp%2F3442a0b2eee1-blue.svg?style=social)](http://www.jianshu.com/p/3442a0b2eee1)  
 [![掘金](https://img.shields.io/badge/%E6%8E%98%E9%87%91-https%3A%2F%2Fjuejin.im%2Fuser%2F593a09f9fe88c2006a0034ea-red.svg?style=social)](https://juejin.im/user/593a09f9fe88c2006a0034ea)  
 
