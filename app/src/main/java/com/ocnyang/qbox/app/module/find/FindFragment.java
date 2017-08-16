@@ -107,24 +107,20 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
     TextView mWeekCalendar;
     public static final String BG_BASE_URL = "http://www.bing.com";
 
-
     private String mParam1;
     private String mParam2;
 
     private int mBgFlag;
     public List<FindBg.ImagesBean> mImages;
 
-
     private List<FunctionBean> mFindList;
     public FindAdapter mFindAdapter;
     public ItemDragAndSwipeCallback mItemDragAndSwipeCallback;
     public ItemTouchHelper mItemTouchHelper;
-    //    public static final String MROE = "ic_add_white_24dp";
     public Subscription mConstellationSubscription;
     public Subscription mDayJokeSubscribe;
     public Subscription mBgSubscription;
     public Subscription mChinaCalendarSubscription;
-
 
     Observer<Constellation> mConstellationObserver = new Observer<Constellation>() {
         @Override
@@ -139,7 +135,6 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
         @Override
         public void onNext(Constellation constellation) {
             if (constellation.getError_code() == 0) {
-                Logger.e("星座："+constellation.getQFriend()+constellation.getSummary());
                 showConstellation(constellation);
             }
         }
@@ -204,7 +199,6 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
 
     private void showDayJoke(DayJoke.ResultBean.DataBean dataBean) {
         String jokeContent = dataBean.getContent();
-        Logger.e("每日一笑："+jokeContent);
         if (!TextUtils.isEmpty(jokeContent))
             mXiaohuaFind.setText(jokeContent);
     }
@@ -229,7 +223,6 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
             setBg(mBgFlag);
         }
     };
-
 
     private void setBg(int bgFlag) {
         if (bgFlag <= 0) {
@@ -262,10 +255,8 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
 
     }
 
-
     public FindFragment() {
     }
-
 
     public static FindFragment newInstance(String param1, String param2) {
         FindFragment fragment = new FindFragment();
@@ -293,9 +284,6 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
         initRecy();
 
     }
-
-
-
 
     @Override
     public void onHiddenChanged(boolean hidden) {
@@ -439,8 +427,6 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
     }
 
     private void itemActionEvent(String name) {
-//        Toast.makeText(getContext(), "点击" + name, Toast.LENGTH_SHORT).show();
-
         switch (name) {
             case "万年历":
                 startActivity(new Intent(getContext(), ChinaCalendarActivity.class));
@@ -594,11 +580,8 @@ public class FindFragment extends BaseFragment implements View.OnClickListener {
                 }
                 break;
             default:
-
                 break;
         }
-
-
     }
 
     @Override

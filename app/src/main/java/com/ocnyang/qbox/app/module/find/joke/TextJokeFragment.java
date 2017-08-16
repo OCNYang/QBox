@@ -91,8 +91,6 @@ public class TextJokeFragment extends BaseFragment implements SwipeRefreshLayout
             //先强转baseJokeBean
             setNewDataAddList(baseJokeBean);
         }
-
-
     };
 
     private void setNewDataAddList(BaseJokeBean baseJokeBean) {
