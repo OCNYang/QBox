@@ -13,11 +13,11 @@
 [![Version Code](https://img.shields.io/badge/Version%20Code-4-brightgreen.svg)](https://github.com/OCNYang/QBox)  
 [![Version Name](https://img.shields.io/badge/Version%20Name-v1.6%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox)  
 
-下载地址：  
+下载地址 | APK Download：
 **地址一：**[http://fir.im/qbox](http://fir.im/qbox)  
 **地址二：**[https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
 
-## 应用预览  
+## 应用预览 | UI
 
 > 图片依次是（多动图，加载较慢，图片不显示刷新页面）：  
 > 1.新闻模块(**如果你下载的 apk 没有显示新闻模块，开启方式：设置页长按头部直至出现提醒 > 设置页长按底部直至出现提醒 > 退出重启应用**)  
@@ -41,7 +41,7 @@
 ![拖曳](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_yidong.gif?imageView2/2/w/405/q/95)
 ![搜索框](http://obbu6r1mi.bkt.clouddn.com/qbox/searchLayout.gif?imageView2/2/w/405/q/95)
 
-## 本应用集成的各开源库或控件的说明
+## 集成的各开源库或控件的说明
 
 * [Document | 说明文档](https://github.com/OCNYang/QBox/wiki)
 
