@@ -206,10 +206,8 @@ public class WeatherActivity extends FragmentActivity {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             finish();
             System.exit(0);
-//            Intent intent = new Intent(this,MainsActivity.class);
-//            startActivity(intent);
             return true;
         }
-            return super.onKeyDown(keyCode, event);
-        }
+        return super.onKeyDown(keyCode, event);
     }
+}

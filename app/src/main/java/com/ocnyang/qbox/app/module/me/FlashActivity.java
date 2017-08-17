@@ -1,21 +1,34 @@
 package com.ocnyang.qbox.app.module.me;
 
+import android.Manifest;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
+import android.widget.Toast;
 
 import com.ocnyang.qbox.app.R;
 import com.ocnyang.qbox.app.base.BaseCommonActivity;
 
-public class FlashActivity extends BaseCommonActivity implements View.OnClickListener{
+import permissions.dispatcher.NeedsPermission;
+import permissions.dispatcher.OnNeverAskAgain;
+import permissions.dispatcher.OnPermissionDenied;
+import permissions.dispatcher.OnShowRationale;
+import permissions.dispatcher.PermissionRequest;
+import permissions.dispatcher.RuntimePermissions;
+
+@RuntimePermissions
+public class FlashActivity extends BaseCommonActivity implements View.OnClickListener {
     RelativeLayout root;
     Camera camera;
     ImageButton flashLight;
@@ -26,6 +39,7 @@ public class FlashActivity extends BaseCommonActivity implements View.OnClickLis
     Handler sosHandler;
     final int FLASH_LIGHT_ON = 1;
     final int FLASH_LIGHT_OFF = -1;
+
     @Override
     public void initContentView() {
         setContentView(R.layout.activity_flash);
@@ -47,6 +61,12 @@ public class FlashActivity extends BaseCommonActivity implements View.OnClickLis
         flashLight.setTag("open");
         sos = (ImageButton) findViewById(R.id.sos);
         sos.setTag("close");
+
+        FlashActivityPermissionsDispatcher.startFlashWithCheck(this);
+    }
+
+    @NeedsPermission(Manifest.permission.CAMERA)
+    public void startFlash() {
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         float density = metrics.density;
         int screenHeight = metrics.heightPixels;
@@ -67,6 +87,54 @@ public class FlashActivity extends BaseCommonActivity implements View.OnClickLis
 
         flashLight.setOnClickListener(this);
         sos.setOnClickListener(this);
+    }
+
+    /**
+     * 为什么要获取这个权限给用户的说明
+     *
+     * @param request
+     */
+    @OnShowRationale(Manifest.permission.CAMERA)
+    public void showRationaleForCamera(final PermissionRequest request) {
+        new AlertDialog.Builder(this)
+                .setTitle("权限申请")
+                .setMessage("你将用的闪光灯功能，请你授权照相机权限！")
+                .setPositiveButton(R.string.imtrue, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        request.proceed();
+                    }
+                })
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        request.cancel();
+                    }
+                })
+                .show();
+    }
+
+    /**
+     * 如果用户不授予权限调用的方法
+     */
+    @OnPermissionDenied(Manifest.permission.CAMERA)
+    public void showDeniedForCamera() {
+        Toast.makeText(this, "没有授予照相机的权限", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 如果用户选择了让设备“不再询问”，而调用的方法
+     */
+    @OnNeverAskAgain(Manifest.permission.CAMERA)
+    public void showNeverAskForCamera() {
+        Toast.makeText(this, "Don't ask again!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // 委托授权
+        FlashActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
     }
 
     @Override
