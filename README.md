@@ -44,7 +44,7 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 
 ## 集成的各开源库或控件的说明
 
-* [Document | 说明文档](https://github.com/OCNYang/QBox/wiki)
+** [Document | 说明文档](https://github.com/OCNYang/QBox/wiki) **(已转移到 Wiki)  
 
 ## 更多地方找到本应用详细说明   
 
@@ -53,4 +53,4 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 
 <br>
 
-[![ocnyang.com](https://img.shields.io/badge/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-www.ocnyang.com-lightgrey.svg?style=flat-square)](http://ocnyang.com/)&ensp;&ensp;[![新浪微博](https://img.shields.io/badge/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A-%E6%AC%A7%E6%AC%A7%E5%BF%83%E5%BF%83-red.svg?style=flat-square)](http://weibo.com/shedoor/)
+[![ocnyang.com](https://img.shields.io/badge/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99-www.ocnyang.com-lightgrey.svg?style=flat-square)](http://ocnyang.com/)&ensp;&ensp;[![新浪微博](https://img.shields.io/badge/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A-欧神杨-red.svg?style=flat-square)](http://weibo.com/ocnyang/)
