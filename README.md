@@ -44,7 +44,7 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 
 ## 集成的各开源库或控件的说明
 
-** [Document | 说明文档](https://github.com/OCNYang/QBox/wiki) **(已转移到 Wiki)  
+**[Document | 说明文档](https://github.com/OCNYang/QBox/wiki)** (已转移到 Wiki)  
 
 ## 更多地方找到本应用详细说明   
 
