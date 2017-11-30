@@ -13,7 +13,7 @@
         android:label="Tests for net.lucode.hackware.magicindicator.test"
         android:targetPackage="net.lucode.hackware.magicindicator.test" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

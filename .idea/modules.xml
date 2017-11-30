@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/QBox.iml" filepath="$PROJECT_DIR$/QBox.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TravelLover.iml" filepath="$PROJECT_DIR$/TravelLover.iml" />
+      <module fileurl="file://E:\QBox\QBox\TravelLover.iml" filepath="E:\QBox\QBox\TravelLover.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/magicindicator/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator/magicindicator.iml" />
     </modules>

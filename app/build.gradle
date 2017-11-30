@@ -6,14 +6,14 @@ apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.ocnyang.qbox.app"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 4
         versionName "1.6"
-
+        flavorDimensions "versionCode"
         /**
          * 对Java8新语法的支持
          * 如果强制支持Java8的话；会导致Java代码中动态设置的中文在运行中是乱码。
@@ -107,6 +107,7 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    google()
 }
 
 dependencies {
