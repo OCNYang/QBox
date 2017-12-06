@@ -114,7 +114,7 @@
                 style="@style/aboutme.text"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="新浪微博：欧欧心心"
+                android:text="新浪微博：欧神杨"
                 android:textStyle="bold"/>
 
             <TextView

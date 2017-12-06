@@ -1,5 +1,6 @@
 package com.ocnyang.qbox.app.network;
 
+import android.os.Environment;
 import android.util.Log;
 
 import com.ocnyang.qbox.app.network.api.ChinaCalendarApi;
@@ -15,6 +16,10 @@ import com.ocnyang.qbox.app.network.api.QueryInfoApi;
 import com.ocnyang.qbox.app.network.api.TextJokeApi;
 import com.ocnyang.qbox.app.network.api.WechatApi;
 
+import java.io.File;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import retrofit2.CallAdapter;
 import retrofit2.Converter;
@@ -56,7 +61,21 @@ public class Network {
     public static ChinaCalendarApi sChinaCalendarApi;
     public static CityApi sCityApi;
 
+    private static final long cacheSize = 1024 * 1024 * 20;// 缓存文件最大限制大小20M
+    private static String cacheDirectory = Environment.getExternalStorageDirectory() + "/okttpcaches"; // 设置缓存文件路径
+    private static Cache cache = new Cache(new File(cacheDirectory), cacheSize);  //
+    private static final OkHttpClient cacheClient;
 
+    static {
+        //如果无法生存缓存文件目录，检测权限使用已经加上，检测手机是否把文件读写权限禁止了
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.connectTimeout(8, TimeUnit.SECONDS); // 设置连接超时时间
+        builder.writeTimeout(8, TimeUnit.SECONDS);// 设置写入超时时间
+        builder.readTimeout(8, TimeUnit.SECONDS);// 设置读取数据超时时间
+        builder.retryOnConnectionFailure(true);// 设置进行连接失败重试
+        builder.cache(cache);// 设置缓存
+        cacheClient = builder.build();
+    }
 
     private static OkHttpClient okHttpClient = new OkHttpClient();
     private static Converter.Factory gsonConverterFactory = GsonConverterFactory.create();

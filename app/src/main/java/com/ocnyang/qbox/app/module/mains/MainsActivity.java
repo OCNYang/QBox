@@ -94,6 +94,7 @@ public class MainsActivity extends BaseCustomActivity {
     }
 
     boolean isRestart = false;
+
     private void initByRestart(Bundle savedInstanceState) {
 
         mCurrentIndex = savedInstanceState.getString("mCurrentIndex");
@@ -101,8 +102,9 @@ public class MainsActivity extends BaseCustomActivity {
         isRestart = true;
         Logger.e("恢复状态：" + mCurrentIndex);
         mMeFragment = (MeFragment) sBaseFragmentManager.findFragmentByTag(ME_FRAGMENT);
-        if (sRecommendMains.getVisibility()==View.VISIBLE){
-        mNewsFragment = (NewsFragment) sBaseFragmentManager.findFragmentByTag(NEWS_FRAGMENT);}
+        if (sRecommendMains.getVisibility() == View.VISIBLE) {
+            mNewsFragment = (NewsFragment) sBaseFragmentManager.findFragmentByTag(NEWS_FRAGMENT);
+        }
         mWechatFragment = (WechatFragment) sBaseFragmentManager.findFragmentByTag(WECHAT_FRAGMENT);
         mFindFragment = (FindFragment) sBaseFragmentManager.findFragmentByTag(FIND_FRAGMENT);
 
@@ -116,7 +118,7 @@ public class MainsActivity extends BaseCustomActivity {
 
         String startPage = WECHAT_FRAGMENT;
         String s = (String) SPUtils.get(this, Const.OPENNEWS, "nomagic");
-        if (s.equals("magicopen")){
+        if (s.equals("magicopen")) {
             sRecommendMains.setVisibility(View.VISIBLE);
             startPage = NEWS_FRAGMENT;
         }
@@ -183,10 +185,10 @@ public class MainsActivity extends BaseCustomActivity {
         if (mMeFragment == null) {
             mMeFragment = MeFragment.newInstance();
             addFragment(R.id.framelayout_mains, mMeFragment, ME_FRAGMENT);
-        }else if (isRestart = true){
+        } else if (isRestart = true) {
             getFragmentTransaction().show(mMeFragment).commit();
             isRestart = false;
-        }else {
+        } else {
             showFragment(mMeFragment);
         }
     }
@@ -198,8 +200,8 @@ public class MainsActivity extends BaseCustomActivity {
         if (mFindFragment == null) {
             mFindFragment = FindFragment.newInstance("", "");
             addFragment(R.id.framelayout_mains, mFindFragment, FIND_FRAGMENT);
-        }else if (isRestart = true){
-            isRestart =false;
+        } else if (isRestart = true) {
+            isRestart = false;
             getFragmentTransaction().show(mFindFragment).commit();
         } else {
             showFragment(mFindFragment);
@@ -214,8 +216,8 @@ public class MainsActivity extends BaseCustomActivity {
         if (mWechatFragment == null) {
             mWechatFragment = mWechatFragment.newInstance("", "");
             addFragment(R.id.framelayout_mains, mWechatFragment, WECHAT_FRAGMENT);
-        }else if (isRestart = true){
-            isRestart =false;
+        } else if (isRestart = true) {
+            isRestart = false;
             getFragmentTransaction().show(mWechatFragment).commit();
         } else {
             showFragment(mWechatFragment);
@@ -231,11 +233,11 @@ public class MainsActivity extends BaseCustomActivity {
             sRecommendMains.setSelected(true);
         }
         if (mNewsFragment == null) {
-            Logger.e("恢复状态："+"null");
+            Logger.e("恢复状态：" + "null");
             mNewsFragment = NewsFragment.newInstance("a", "b");
             addFragment(R.id.framelayout_mains, mNewsFragment, NEWS_FRAGMENT);
-        }else if (isRestart = true){
-            isRestart =false;
+        } else if (isRestart = true) {
+            isRestart = false;
             getFragmentTransaction().show(mNewsFragment).commit();
         } else {
             showFragment(mNewsFragment);
@@ -257,7 +259,8 @@ public class MainsActivity extends BaseCustomActivity {
             hideFragment(mMeFragment);
         }
         if (sRecommendMains.getVisibility() == View.VISIBLE) {
-        sRecommendMains.setSelected(false);}
+            sRecommendMains.setSelected(false);
+        }
         sFindtravelMains.setSelected(false);
         sCityfinderMains.setSelected(false);
         sMeMains.setSelected(false);
@@ -273,19 +276,19 @@ public class MainsActivity extends BaseCustomActivity {
         switch (view.getId()) {
             case R.id.recommend_mains:
                 if (!mCurrentIndex.equals(NEWS_FRAGMENT))
-                switchToFragment(NEWS_FRAGMENT);
+                    switchToFragment(NEWS_FRAGMENT);
                 break;
             case R.id.cityfinder_mains:
                 if (!mCurrentIndex.equals(WECHAT_FRAGMENT))
-                switchToFragment(WECHAT_FRAGMENT);
+                    switchToFragment(WECHAT_FRAGMENT);
                 break;
             case R.id.findtravel_mains:
                 if (!mCurrentIndex.equals(FIND_FRAGMENT))
-                switchToFragment(FIND_FRAGMENT);
+                    switchToFragment(FIND_FRAGMENT);
                 break;
             case R.id.me_mains:
                 if (!mCurrentIndex.equals(ME_FRAGMENT))
-                switchToFragment(ME_FRAGMENT);
+                    switchToFragment(ME_FRAGMENT);
                 break;
         }
     }
