@@ -100,7 +100,7 @@ public class Network {
     public static NewsApi getNewsApi() {
         if (sNewsApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl(ROOT_URL)
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -114,7 +114,7 @@ public class Network {
     public static AllCategoryApi getAllCategoryApi() {
         if (mAllCategoryApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl(MOB_ROOT_URL)
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -127,7 +127,7 @@ public class Network {
     public static WechatApi getWechatApi() {
         if (mWechatApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl(MOB_ROOT_URL)
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -154,7 +154,7 @@ public class Network {
     public static DayJokeApi getDayJokeApi() {
         if (sDayJokeApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl("http://japi.juhe.cn/")
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -182,7 +182,7 @@ public class Network {
     public static TextJokeApi getRandomTextJokeApi(){
         if (sRandomTextJokeApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl("http://v.juhe.cn/")
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -195,7 +195,7 @@ public class Network {
     public static TextJokeApi getNewTextJokeApi(){
         if (sTextJokeApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl("http://japi.juhe.cn/")
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -209,7 +209,7 @@ public class Network {
     public static ImgJokeApi getRandomImgJokeApi(){
         if (sRandomImgJokeApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl("http://v.juhe.cn/")
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
@@ -222,7 +222,7 @@ public class Network {
     public static ImgJokeApi getNewImgJokeApi(){
         if (sNewImgJokeApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .client(cacheClient)
+                    .client(okHttpClient)
                     .baseUrl("http://japi.juhe.cn/")
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
