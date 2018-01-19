@@ -7,7 +7,7 @@ import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.ocnyang.qbox.app.R;
-import com.ocnyang.qbox.app.model.entities.NewsItem;
+import com.ocnyang.qbox.app.model.entities.WechatItem;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -23,7 +23,7 @@ import java.util.List;
  *******************************************************************/
 
 
-public class DefaultStyleItemAdapter extends BaseQuickAdapter<NewsItem.ResultBean.DataBean, BaseViewHolder> {
+public class DefaultStyleItemAdapter extends BaseQuickAdapter<WechatItem.ResultBean.ListBean, BaseViewHolder> {
     boolean isNotLoad;
     public int mImgWidth;
     public int mImgHeight;
@@ -32,7 +32,7 @@ public class DefaultStyleItemAdapter extends BaseQuickAdapter<NewsItem.ResultBea
         super(layoutResId);
     }
 
-    public DefaultStyleItemAdapter(int layoutResId, List<NewsItem.ResultBean.DataBean> data) {
+    public DefaultStyleItemAdapter(int layoutResId, List<WechatItem.ResultBean.ListBean> data) {
         super(layoutResId, data);
     }
 
@@ -43,14 +43,14 @@ public class DefaultStyleItemAdapter extends BaseQuickAdapter<NewsItem.ResultBea
         mImgHeight = imgHeight;
     }
     @Override
-    protected void convert(BaseViewHolder helper, NewsItem.ResultBean.DataBean item) {
+    protected void convert(BaseViewHolder helper, WechatItem.ResultBean.ListBean item) {
         helper.setText(R.id.title_news_item, item.getTitle())
-                .setText(R.id.from_news_item, item.getAuthor_name())
-                .setText(R.id.time_news_item, onFormatTime(item.getDate()));
+                .setText(R.id.from_news_item, "小秋魔盒")
+                .setText(R.id.time_news_item, onFormatTime(item.getPubTime()));
 
         if (!isNotLoad) {
             Glide.with(mContext)
-                    .load(item.getThumbnail_pic_s())
+                    .load(item.getThumbnails())
                     .override(mImgWidth,mImgHeight)
                     .placeholder(R.drawable.lodingview)
                     .error(R.drawable.errorview)

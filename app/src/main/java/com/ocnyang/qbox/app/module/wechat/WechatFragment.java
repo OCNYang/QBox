@@ -37,7 +37,6 @@ import rx.schedulers.Schedulers;
 public class WechatFragment extends BaseFragment implements SwipeRefreshLayout.OnRefreshListener, BaseQuickAdapter.RequestLoadMoreListener {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    public static final String WECHAT_APPKEY = "26ce25ffcfc907a26263e2b0e3e23676";
     //每页请求的 item 数量
     public final int mPs = 21;
     public int mPageMark = 1;

@@ -100,7 +100,6 @@ public class BaseApplication extends Application {
         if (sHandler == null) {
             sHandler = new DemoHandler(getApplicationContext());
         }
-
     }
 
     private boolean shouldInit() {

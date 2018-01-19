@@ -17,6 +17,7 @@ import com.ocnyang.qbox.app.R;
 import com.ocnyang.qbox.app.base.BaseFragment;
 import com.ocnyang.qbox.app.config.Const;
 import com.ocnyang.qbox.app.model.entities.NewsItem;
+import com.ocnyang.qbox.app.model.entities.WechatItem;
 import com.ocnyang.qbox.app.module.news_details.NewsDetailsActivity;
 import com.ocnyang.qbox.app.network.Network;
 import com.ocnyang.qbox.app.utils.PixelUtil;
@@ -46,6 +47,7 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
 
     // 当前列表的item个数
     int mCurrentCounter;
+    int mPage = 1;
     // 最多加载的条目个数
     private static final int TOTAL_COUNTER = 30;
 
@@ -69,7 +71,7 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
         // Required empty public constructor
     }
 
-    Observer<NewsItem> mObserver = new Observer<NewsItem>() {
+    Observer<WechatItem> mObserver = new Observer<WechatItem>() {
         @Override
         public void onCompleted() {
 
@@ -88,14 +90,14 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
         }
 
         @Override
-        public void onNext(NewsItem newsItem) {
+        public void onNext(WechatItem newsItem) {
             setNewDataAddList(newsItem);
         }
     };
 
-    private void setNewDataAddList(NewsItem newsItem) {
-        if (newsItem != null && newsItem.getError_code() == 0) {
-            baseQuickAdapter.setNewData(newsItem.getResult().getData());
+    private void setNewDataAddList(WechatItem newsItem) {
+        if (newsItem != null && "200".equals(newsItem.getRetCode())) {
+            baseQuickAdapter.setNewData(newsItem.getResult().getList());
             if (mSwipeRefreshLayout.isRefreshing()) {
                 mSwipeRefreshLayout.setRefreshing(false);
             }
@@ -119,7 +121,6 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
         DefaultStyleFragment fragment = new DefaultStyleFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -136,7 +137,6 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
         initRecyclerView();
         onLoading();
 
-//        onRequestAgain();
         requestNews();
 
     }
@@ -156,10 +156,10 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
         mNewsList.addOnItemTouchListener(new OnItemClickListener() {
             @Override
             public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
-                List<NewsItem.ResultBean.DataBean> data = adapter.getData();
+                List<WechatItem.ResultBean.ListBean> data = adapter.getData();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("url", data.get(position).getUrl());
+                bundle.putString("url", data.get(position).getSourceUrl());
                 bundle.putString("title", data.get(position).getTitle());
                 Intent intent = new Intent(getContext(), NewsDetailsActivity.class);
                 intent.putExtras(bundle);
@@ -170,7 +170,6 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
 
         mNewsList.setAdapter(baseQuickAdapter);
         mCurrentCounter = baseQuickAdapter.getData().size();
-//        baseQuickAdapter.setNewData(null);
     }
 
     private void initEmptyView() {
@@ -203,6 +202,7 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
      * 同时注意这个时候应该把刷新功能关闭。//或者设计成这个时候下拉刷新重新请求数据也行。
      */
     private void onRequestAgain() {
+        mPage++;
         requestNews();
     }
 
@@ -223,7 +223,6 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
     @Override
     protected void managerArguments() {
         mParam1 = getArguments().getString(ARG_PARAM1);
-//        mParam2 = getArguments().getString(ARG_PARAM2);
     }
 
     @Override
@@ -256,8 +255,8 @@ public class DefaultStyleFragment extends BaseFragment implements SwipeRefreshLa
      */
     private void requestNews(/*String key*/) {
         unsubscribe();
-        mSubscription = Network.getNewsApi()
-                .getNews(mParam1, JUHE_NEWS_APP_KEY)
+        mSubscription = Network.getWechatApi()
+                .getWechat(mParam1, mPage, TOTAL_COUNTER)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(mObserver);

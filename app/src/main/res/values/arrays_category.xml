@@ -3,27 +3,27 @@
     <!--{"头条", "社会", "国内", "国际", "娱乐",
     "体育", "军事", "科技", "财经", "时尚", "微信精选"}-->
     <string-array name="category_name">
-        <item>头条</item>
-        <item>社会</item>
-        <item>国内</item>
-        <item>国际</item>
-        <item>娱乐</item>
-        <item>体育</item>
-        <item>军事</item>
-        <item>科技</item>
-        <item>财经</item>
         <item>时尚</item>
+        <item>热点</item>
+        <item>娱乐</item>
+        <item>旅行</item>
+        <item>影视音乐</item>
+        <item>搞笑</item>
+        <item>互联网</item>
+        <item>游戏</item>
+        <item>美女</item>
+        <item>星座</item>
     </string-array>
     <string-array name="category_type">
-        <item>top</item>
-        <item>shehui</item>
-        <item>guonei</item>
-        <item>guoji</item>
-        <item>yule</item>
-        <item>tiyu</item>
-        <item>junshi</item>
-        <item>keji</item>
-        <item>caijing</item>
-        <item>shishang</item>
+        <item>1</item>
+        <item>2</item>
+        <item>7</item>
+        <item>9</item>
+        <item>12</item>
+        <item>11</item>
+        <item>13</item>
+        <item>17</item>
+        <item>24</item>
+        <item>26</item>
     </string-array>
 </resources>

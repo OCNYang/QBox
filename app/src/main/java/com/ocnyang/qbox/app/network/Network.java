@@ -3,6 +3,7 @@ package com.ocnyang.qbox.app.network;
 import android.os.Environment;
 import android.util.Log;
 
+import com.ocnyang.qbox.app.network.api.AllCategoryApi;
 import com.ocnyang.qbox.app.network.api.ChinaCalendarApi;
 import com.ocnyang.qbox.app.network.api.CityApi;
 import com.ocnyang.qbox.app.network.api.ConstellationApi;
@@ -43,6 +44,7 @@ public class Network {
     private static DemoApi demoApi;
     private static NewsApi sNewsApi;
     private static WechatApi mWechatApi;
+    private static AllCategoryApi mAllCategoryApi;
     private static FindBgApi sFindBgApi;
     private static DayJokeApi sDayJokeApi;
     private static ConstellationApi sConstellationApi;
@@ -107,6 +109,19 @@ public class Network {
         }
         Log.e("oooooo","getNewsApi");
         return sNewsApi;
+    }
+
+    public static AllCategoryApi getAllCategoryApi() {
+        if (mAllCategoryApi == null) {
+            Retrofit retrofit = new Retrofit.Builder()
+                    .client(cacheClient)
+                    .baseUrl(MOB_ROOT_URL)
+                    .addConverterFactory(gsonConverterFactory)
+                    .addCallAdapterFactory(rxJavaCallAdapterFactory)
+                    .build();
+            mAllCategoryApi = retrofit.create(AllCategoryApi.class);
+        }
+        return mAllCategoryApi;
     }
 
     public static WechatApi getWechatApi() {

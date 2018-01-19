@@ -94,8 +94,6 @@ public class NewsFragment extends BaseFragment {
 
     @Override
     public void initView() {
-
-
         mCategoryEntityList = getCategoryFromDB();
         if (mCategoryEntityList == null) {
             mCategoryEntityList = new ArrayList<>();
