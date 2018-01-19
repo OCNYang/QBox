@@ -15,8 +15,8 @@ import rx.Observable;
 
 
 public interface WechatApi {
-    @GET("weixin/query")
-    Observable<WechatItem> getWechat(@Query("key") String appkey,
-                                     @Query("pno") int pno,
-                                     @Query("ps") int ps);
+    @GET("wx/article/search?key=1cc099ede9137")
+    Observable<WechatItem> getWechat(@Query("cid") String cid,
+                                     @Query("page") int page,
+                                     @Query("size") int size);
 }

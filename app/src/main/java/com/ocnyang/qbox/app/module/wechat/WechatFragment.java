@@ -222,7 +222,7 @@ public class WechatFragment extends BaseFragment implements SwipeRefreshLayout.O
     private void requestData() {
         unsubscribe();
         mSubscription = Network.getWechatApi()
-                .getWechat(WECHAT_APPKEY, mPageMark, mPs)//key,页码,每页条数
+                .getWechat("8", mPageMark, mPs)//key,页码,每页条数
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(mObserver);
@@ -230,7 +230,7 @@ public class WechatFragment extends BaseFragment implements SwipeRefreshLayout.O
 
 
     private void setNewDataAddList(WechatItem wechatItem) {
-        if (wechatItem != null && wechatItem.getError_code() == 0) {
+        if (wechatItem != null && "200".equals(wechatItem.getRetCode())) {
             mPageMark++;
             List<WechatItem.ResultBean.ListBean> newData = wechatItem.getResult().getList();
             WechatItem.ResultBean.ListBean listBean = newData.get(0);

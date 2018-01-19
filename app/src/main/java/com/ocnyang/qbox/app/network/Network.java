@@ -38,6 +38,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Network {
 
     public static final String ROOT_URL = "http://v.juhe.cn/";
+    public static final String MOB_ROOT_URL = "http://apicloud.mob.com/";
 
     private static DemoApi demoApi;
     private static NewsApi sNewsApi;
@@ -112,13 +113,12 @@ public class Network {
         if (mWechatApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
                     .client(cacheClient)
-                    .baseUrl(ROOT_URL)
+                    .baseUrl(MOB_ROOT_URL)
                     .addConverterFactory(gsonConverterFactory)
                     .addCallAdapterFactory(rxJavaCallAdapterFactory)
                     .build();
             mWechatApi = retrofit.create(WechatApi.class);
         }
-        Log.e("oooooo","getwechatApi");
         return mWechatApi;
     }
 

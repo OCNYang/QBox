@@ -2,6 +2,7 @@ package com.ocnyang.qbox.app.model.entities;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.text.TextUtils;
 
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 
@@ -15,19 +16,24 @@ import java.util.List;
  * * * * *   * * * *   *     *.Yang  Web site:www.ocnyang.com
  *******************************************************************/
 
-
 public class WechatItem implements Parcelable {
 
-    private String reason;
-    private ResultBean result;
-    private int error_code;
+    /**
+     * msg : success
+     * result : {}],"total":4846}
+     * retCode : 200
+     */
 
-    public String getReason() {
-        return reason;
+    private String msg;
+    private ResultBean result;
+    private String retCode;
+
+    public String getMsg() {
+        return msg;
     }
 
-    public void setReason(String reason) {
-        this.reason = reason;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public ResultBean getResult() {
@@ -38,44 +44,39 @@ public class WechatItem implements Parcelable {
         this.result = result;
     }
 
-    public int getError_code() {
-        return error_code;
+    public String getRetCode() {
+        return retCode;
     }
 
-    public void setError_code(int error_code) {
-        this.error_code = error_code;
+    public void setRetCode(String retCode) {
+        this.retCode = retCode;
     }
 
     public static class ResultBean implements Parcelable {
+        /**
+         * curPage : 1
+         * list : [{}]
+         * total : 4846
+         */
 
-
-        private int totalPage;
-        private int ps;
-        private int pno;
+        private int curPage;
+        private int total;
         private List<ListBean> list;
 
-        public int getTotalPage() {
-            return totalPage;
+        public int getCurPage() {
+            return curPage;
         }
 
-        public void setTotalPage(int totalPage) {
-            this.totalPage = totalPage;
+        public void setCurPage(int curPage) {
+            this.curPage = curPage;
         }
 
-        public int getPs() {
-            return ps;
+        public int getTotal() {
+            return total;
         }
 
-        public void setPs(int ps) {
-            this.ps = ps;
-        }
-
-        public int getPno() {
-            return pno;
-        }
-
-        public void setPno(int pno) {
-            this.pno = pno;
+        public void setTotal(int total) {
+            this.total = total;
         }
 
         public List<ListBean> getList() {
@@ -88,25 +89,30 @@ public class WechatItem implements Parcelable {
 
         public static class ListBean implements MultiItemEntity, Parcelable {
             /**
-             * id : wechat_20170222006600
-             * title : 不死的基因
-             * source : 大科技
-             * firstImg : http://zxpic.gtimg.com/infonew/0/wechat_pics_-13427722.jpg/640
-             * mark :
-             * url : http://v.juhe.cn/weixin/redirect?wid=wechat_20170222006600
+             * cid : 8
+             * hitCount : 51111
+             * id : FDA1C88F4814BA4D3D17B31B5E92D0EB
+             * pubTime : 2017-07-18
+             * sourceUrl : http://mp.weixin.qq.com/s?__biz=MjM5ODA0NTc4MA==&mid=2652749935&idx=1&sn=70152649d7b0788aa17d9a3090917d3d&chksm=bd39d1548a4e584241a24b99c4b7a8db77cbb5ba6b3ef5a6fed333d6f5e1f6c3c1fee5b4a147&scene=27#wechat_redirect
+             * subTitle : 如果有人敢这么掰我的嘴，我绝对一口咬回去。
+             * thumbnails : http://mmbiz.qpic.cn/mmbiz_jpg/HhorckbERhjeOvXRm684W3wvzUPu9j1c6sDibXIMZJaEqn9OAiamTMFPUFgUVs1dLB9gcdRxZFBC25vnxXRI3ZBg/0?wx_fmt=jpeg
+             * title : 原创 你挑媳妇的样子，就像在挑牲口
              */
+
             public static final int STYLE_BIG = 1;
             public static final int STYLE_SMALL = 0;
 
             public static final int STYLE_SMALL_SPAN_SIZE = 1;
             public static final int STYLE_BIG_SPAN_SIZE = 2;
 
+            private String cid;
+            private String hitCount;
             private String id;
+            private String pubTime;
+            private String sourceUrl;
+            private String subTitle;
+            private String thumbnails;
             private String title;
-            private String source;
-            private String firstImg;
-            private String mark;
-            private String url;
 
             private int itemType = 0;
             private int spansize = 1;
@@ -119,12 +125,80 @@ public class WechatItem implements Parcelable {
                 this.spansize = spansize;
             }
 
+            @Override
+            public int getItemType() {
+                return itemType;
+            }
+
+            public void setItemType(int itemType) {
+                if (itemType == 1 || itemType == 0) {
+                    this.itemType = itemType;
+                } else {
+                    this.itemType = 0;
+                }
+            }
+
+            public String getCid() {
+                return cid;
+            }
+
+            public void setCid(String cid) {
+                this.cid = cid;
+            }
+
+            public String getHitCount() {
+                return hitCount;
+            }
+
+            public void setHitCount(String hitCount) {
+                this.hitCount = hitCount;
+            }
+
             public String getId() {
                 return id;
             }
 
             public void setId(String id) {
                 this.id = id;
+            }
+
+            public String getPubTime() {
+                return pubTime;
+            }
+
+            public void setPubTime(String pubTime) {
+                this.pubTime = pubTime;
+            }
+
+            public String getSourceUrl() {
+                return sourceUrl;
+            }
+
+            public void setSourceUrl(String sourceUrl) {
+                this.sourceUrl = sourceUrl;
+            }
+
+            public String getSubTitle() {
+                return subTitle;
+            }
+
+            public void setSubTitle(String subTitle) {
+                this.subTitle = subTitle;
+            }
+
+            public String getThumbnails() {
+                if ((!TextUtils.isEmpty(thumbnails)) && thumbnails.contains("$")) {
+                    for (String string : thumbnails.split("\\$", 3)) {
+                        if (!TextUtils.isEmpty(string)) {
+                            return string;
+                        }
+                    }
+                }
+                return thumbnails;
+            }
+
+            public void setThumbnails(String thumbnails) {
+                this.thumbnails = thumbnails;
             }
 
             public String getTitle() {
@@ -135,51 +209,6 @@ public class WechatItem implements Parcelable {
                 this.title = title;
             }
 
-            public String getSource() {
-                return source;
-            }
-
-            public void setSource(String source) {
-                this.source = source;
-            }
-
-            public String getFirstImg() {
-                return firstImg;
-            }
-
-            public void setFirstImg(String firstImg) {
-                this.firstImg = firstImg;
-            }
-
-            public String getMark() {
-                return mark;
-            }
-
-            public void setMark(String mark) {
-                this.mark = mark;
-            }
-
-            public String getUrl() {
-                return url;
-            }
-
-            public void setUrl(String url) {
-                this.url = url;
-            }
-
-            @Override
-            public int getItemType() {
-                return itemType;
-            }
-
-            public void setItemType(int itemType) {
-                if (itemType == 1 || itemType == 0) {
-                    this.itemType = itemType;
-                }else {
-                    this.itemType = 0;
-                }
-            }
-
             @Override
             public int describeContents() {
                 return 0;
@@ -187,28 +216,28 @@ public class WechatItem implements Parcelable {
 
             @Override
             public void writeToParcel(Parcel dest, int flags) {
+                dest.writeString(this.cid);
+                dest.writeString(this.hitCount);
                 dest.writeString(this.id);
+                dest.writeString(this.pubTime);
+                dest.writeString(this.sourceUrl);
+                dest.writeString(this.subTitle);
+                dest.writeString(this.thumbnails);
                 dest.writeString(this.title);
-                dest.writeString(this.source);
-                dest.writeString(this.firstImg);
-                dest.writeString(this.mark);
-                dest.writeString(this.url);
-                dest.writeInt(this.itemType);
-                dest.writeInt(this.spansize);
             }
 
             public ListBean() {
             }
 
             protected ListBean(Parcel in) {
+                this.cid = in.readString();
+                this.hitCount = in.readString();
                 this.id = in.readString();
+                this.pubTime = in.readString();
+                this.sourceUrl = in.readString();
+                this.subTitle = in.readString();
+                this.thumbnails = in.readString();
                 this.title = in.readString();
-                this.source = in.readString();
-                this.firstImg = in.readString();
-                this.mark = in.readString();
-                this.url = in.readString();
-                this.itemType = in.readInt();
-                this.spansize = in.readInt();
             }
 
             public static final Creator<ListBean> CREATOR = new Creator<ListBean>() {
@@ -231,9 +260,8 @@ public class WechatItem implements Parcelable {
 
         @Override
         public void writeToParcel(Parcel dest, int flags) {
-            dest.writeInt(this.totalPage);
-            dest.writeInt(this.ps);
-            dest.writeInt(this.pno);
+            dest.writeInt(this.curPage);
+            dest.writeInt(this.total);
             dest.writeList(this.list);
         }
 
@@ -241,9 +269,8 @@ public class WechatItem implements Parcelable {
         }
 
         protected ResultBean(Parcel in) {
-            this.totalPage = in.readInt();
-            this.ps = in.readInt();
-            this.pno = in.readInt();
+            this.curPage = in.readInt();
+            this.total = in.readInt();
             this.list = new ArrayList<ListBean>();
             in.readList(this.list, ListBean.class.getClassLoader());
         }
@@ -268,18 +295,18 @@ public class WechatItem implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.reason);
+        dest.writeString(this.msg);
         dest.writeParcelable(this.result, flags);
-        dest.writeInt(this.error_code);
+        dest.writeString(this.retCode);
     }
 
     public WechatItem() {
     }
 
     protected WechatItem(Parcel in) {
-        this.reason = in.readString();
+        this.msg = in.readString();
         this.result = in.readParcelable(ResultBean.class.getClassLoader());
-        this.error_code = in.readInt();
+        this.retCode = in.readString();
     }
 
     public static final Parcelable.Creator<WechatItem> CREATOR = new Parcelable.Creator<WechatItem>() {
