@@ -78,7 +78,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="centerCrop"
-            android:src="@drawable/morenimg"/>
+            android:src="@color/colorPrimary"/>
     </LinearLayout>
 
     <TextView

@@ -7,7 +7,7 @@
         android:id="@+id/img_wechat_style"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:src="@drawable/bg2"
+        android:src="@color/colorPrimary"
         android:transitionName="@string/transition_wechat_img"
         android:scaleType="centerCrop"/>
 

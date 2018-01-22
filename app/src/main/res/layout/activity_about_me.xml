@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:id="@+id/main_content"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="match_parent"
-                                                 android:fitsSystemWindows="true"
-                                                 tools:context="com.ocnyang.qbox.app.module.setting.AboutMeActivity">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ocnyang.qbox.app.module.setting.AboutMeActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -25,9 +26,9 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
-            app:tabIndicatorHeight="2dp"
             android:layout_width="match_parent"
-            android:layout_height="2dp"/>
+            android:layout_height="2dp"
+            app:tabIndicatorHeight="2dp"/>
 
     </android.support.design.widget.AppBarLayout>
 

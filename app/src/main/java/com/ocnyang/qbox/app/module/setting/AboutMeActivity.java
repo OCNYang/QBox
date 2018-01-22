@@ -49,6 +49,7 @@ public class AboutMeActivity extends BaseCommonActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+        mViewPager.setCurrentItem(mFragmentList.size()-1);
     }
 
     private void initToolbar() {

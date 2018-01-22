@@ -51,7 +51,7 @@ public class WechatItemAdapter extends BaseMultiItemQuickAdapter<WechatItem.Resu
                     Glide.with(mContext.getApplicationContext())
                             .load(item.getThumbnails())
                             .override(mImgWidth, mImgHeight)
-                            .placeholder(R.drawable.lodingview)
+                            .placeholder(R.drawable.loading)
                             .error(R.drawable.errorview)
                             .crossFade(1000)
                             .into((ImageView) helper.getView(R.id.img_wechat_style));
@@ -62,7 +62,7 @@ public class WechatItemAdapter extends BaseMultiItemQuickAdapter<WechatItem.Resu
                 if (!isNotLoad) {
                     Glide.with(mContext.getApplicationContext())
                             .load(item.getThumbnails())
-                            .placeholder(R.drawable.lodingview)
+                            .placeholder(R.drawable.loading)
                             .error(R.drawable.errorview)
                             .override(mImgWidth / 2, mImgWidth / 2)
                             .crossFade(1000)

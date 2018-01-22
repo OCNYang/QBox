@@ -93,8 +93,10 @@
         android:text="关注/赞助"/>
 
     <LinearLayout
+        android:id="@+id/weibo_aboutme"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@drawable/shape_bg_click"
         android:layout_marginBottom="15dp"
         android:orientation="horizontal">
 
@@ -127,8 +129,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/wechat_aboutme"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@drawable/shape_bg_click"
         android:layout_marginBottom="15dp"
         android:orientation="horizontal">
 
@@ -160,8 +164,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/alipay_aboutme"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@drawable/shape_bg_click"
         android:layout_marginBottom="15dp"
         android:orientation="horizontal">
 

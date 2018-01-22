@@ -10,6 +10,7 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -132,7 +133,6 @@ public class WechatFragment extends BaseFragment implements SwipeRefreshLayout.O
         });
     }
 
-
     private void initSwipeRefresh() {
         mSwiperWechat.setOnRefreshListener(this);
         mSwiperWechat.setColorSchemeColors(Color.rgb(47, 223, 189));
@@ -145,7 +145,6 @@ public class WechatFragment extends BaseFragment implements SwipeRefreshLayout.O
         mRefreshMark = true;
         mPageMark = 1;
         requestData();
-
     }
 
     private void initEmptyView() {
@@ -226,7 +225,6 @@ public class WechatFragment extends BaseFragment implements SwipeRefreshLayout.O
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(mObserver);
     }
-
 
     private void setNewDataAddList(WechatItem wechatItem) {
         if (wechatItem != null && "200".equals(wechatItem.getRetCode())) {
