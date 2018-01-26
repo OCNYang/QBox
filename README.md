@@ -550,7 +550,7 @@ DayNightActivity的例子的方式是在设置页的的代码方式。
 
 ## 应用详细说明   
 
-[![CSDN](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-http://blog.csdn.net/shedoor-blue.svg?style=social)](http://blog.csdn.net/shedoor)  
+[![CSDN](https://img.shields.io/badge/CSDN-http://blog.csdn.net/shedoor-blue.svg?style=social)](http://blog.csdn.net/shedoor)  
 [![掘金](https://img.shields.io/badge/%E6%8E%98%E9%87%91-https%3A%2F%2Fjuejin.im%2Fuser%2F593a09f9fe88c2006a0034ea-red.svg?style=social)](https://juejin.im/user/593a09f9fe88c2006a0034ea)  
 
 <br>
