@@ -60,6 +60,7 @@ public class XiaomiMessageReceiver extends PushMessageReceiver {
 
     /**
      * 用来接收服务器向客户端发送的透传消息
+     *
      * @param context
      * @param message
      */
@@ -68,9 +69,9 @@ public class XiaomiMessageReceiver extends PushMessageReceiver {
         Log.v(BaseApplication.TAG,
                 "onReceivePassThroughMessage is called. " + message.toString());
         String content = message.getContent();
-        String log = message.getContent().indexOf("新版本")==0?
-        content:
-        context.getString(R.string.recv_passthrough_message, message.getContent());
+        String log = content.indexOf("新版本") == 0 ?
+                content :
+                context.getString(R.string.recv_passthrough_message, message.getContent());
 
         MainsActivity.logList.add(0, getSimpleDate() + " " + log);
 
@@ -88,6 +89,7 @@ public class XiaomiMessageReceiver extends PushMessageReceiver {
     /**
      * 用来接收服务器向客户端发送的通知消息，
      * 这个回调方法会在用户手动点击通知后触发。
+     *
      * @param context
      * @param message
      */
@@ -114,6 +116,7 @@ public class XiaomiMessageReceiver extends PushMessageReceiver {
     /**
      * 用来接收服务器向客户端发送的通知消息，
      * 这个回调方法是在通知消息到达客户端时触发。另外应用在前台时不弹出通知的通知消息到达客户端也会触发这个回调函数。
+     *
      * @param context
      * @param message
      */
@@ -137,6 +140,7 @@ public class XiaomiMessageReceiver extends PushMessageReceiver {
 
     /**
      * 用来接收客户端向服务器发送命令后的响应结果。
+     *
      * @param context
      * @param message
      */
@@ -218,6 +222,7 @@ public class XiaomiMessageReceiver extends PushMessageReceiver {
 
     /**
      * 用来接收客户端向服务器发送注册命令后的响应结果。
+     *
      * @param context
      * @param message
      */

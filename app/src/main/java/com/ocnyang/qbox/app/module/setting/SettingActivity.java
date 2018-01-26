@@ -241,8 +241,8 @@ public class SettingActivity extends BaseCommonActivity implements CompoundButto
                 break;
             case R.id.yjfk_setting:
                 Bundle bundle1 = new Bundle();
-                bundle1.putString("url", "http://ocnyang.com/2017/04/09/QBox/#more");
-                bundle1.putString("title", "意见反馈");
+                bundle1.putString("url", "https://weibo.com/ocnyang");
+                bundle1.putString("title", "意见反馈（微博私信）");
                 Intent intent1 = new Intent(getContext(), WebPageActivity.class);
                 intent1.putExtras(bundle1);
                 startActivity(intent1);

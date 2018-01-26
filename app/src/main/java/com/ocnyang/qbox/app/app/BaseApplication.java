@@ -225,7 +225,6 @@ public class BaseApplication extends Application {
                                 SPUtils.put(context,Const.OPENNEWS,"magicopen");
                                 break;
                             default:
-
                                 break;
                         }
                     }

@@ -261,7 +261,7 @@
         <TextView
             android:id="@+id/yjfk_setting"
             style="@style/Setting.Linear.Name"
-            android:text="意见反馈"/>
+            android:text="意见反馈（微博私信）"/>
 
         <View
             android:layout_width="match_parent"

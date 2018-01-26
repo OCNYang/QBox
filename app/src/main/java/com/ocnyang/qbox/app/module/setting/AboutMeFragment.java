@@ -35,6 +35,12 @@ public class AboutMeFragment extends BaseFragment {
     TextView mMyGithub;
     @BindView(R.id.my_sinaweibo)
     TextView mMySinaweibo;
+    @BindView(R.id.wechat_aboutme)
+    View mWechat_aboutme;
+    @BindView(R.id.weibo_aboutme)
+    View mWeibo_aboutme;
+    @BindView(R.id.alipay_aboutme)
+    View mAlipay_aboutme;
 
     public AboutMeFragment() {
     }

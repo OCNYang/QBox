@@ -52,7 +52,8 @@ public class DefaultStyleItemAdapter extends BaseQuickAdapter<WechatItem.ResultB
             Glide.with(mContext)
                     .load(item.getThumbnails())
                     .override(mImgWidth,mImgHeight)
-                    .placeholder(R.drawable.loading)
+                    .centerCrop()
+//                    .placeholder(R.drawable.loading)
                     .error(R.drawable.errorview)
                     .crossFade(1000)
                     .into((ImageView) helper.getView(R.id.img_news_item));
