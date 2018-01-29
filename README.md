@@ -11,7 +11,7 @@
 A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **Fork**)  
 
 [![Release version](https://img.shields.io/badge/Release%20Version-v1.6%20%E6%AD%A3%E5%BC%8F%E7%89%88-blue.svg)](https://github.com/OCNYang/QBox/releases/tag/1.6)  
-[![Current version](https://img.shields.io/badge/Current%20Version-4-brightgreen.svg)](https://github.com/OCNYang/QBox)  
+[![Current version](https://img.shields.io/badge/Current%20Version-v2.0%20测试版-brightgreen.svg)](https://github.com/OCNYang/QBox)  
 
 #### 下载地址 | APK Download：
 
