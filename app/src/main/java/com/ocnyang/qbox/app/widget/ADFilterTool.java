@@ -20,22 +20,30 @@ public class ADFilterTool {
 //                return true;
 //            }
 //        }
-        //如果是公司项目开发，直接判定是不是自己的域名，如果不是就不加载。
-        if (!url.contains("eastday.com")) {
-            return true;
-        } else {
-//            String[] adUrls = context.getResources().getStringArray(R.array.adBlockUrl);
-//            for (String adUrl : new String[]{"df888.eastday.com", "toutiao.eastday.com", "tt321.eastday.com", "eastday.com/toutiaoh5"}) {
-            if (url.contains("df888.eastday.com") ||
-                    url.contains("toutiao.eastday.com") ||
-                    url.contains("tt321.eastday.com") ||
-                    url.contains("eastday.com/toutiaoh5")
-                    ) {
-                return true;
-            }
+
+//--------------------------------------------------------------------------------------------------
+
+//如果是公司项目开发，直接判定是不是自己的域名，如果不是就不加载。
+//        if (!url.contains("eastday.com")) {
+//            return true;
+//        } else {
+//            if (url.contains("df888.eastday.com") ||
+//                    url.contains("toutiao.eastday.com") ||
+//                    url.contains("tt321.eastday.com") ||
+//                    url.contains("eastday.com/toutiaoh5")
+//                    ) {
+//                return true;
 //            }
-            return false;
+//            return false;
+//        }
+
+//--------------------------------------------------------------------------------------------------
+
+        //这里找到最初的病因，直接屏蔽掉这个就行了。
+        if (url.contains("eastday.com/toutiaoh5")) {
+            return true;
         }
+        return false;
     }
 
 }
