@@ -17,27 +17,21 @@ import android.webkit.WebViewClient;
 
 
 public class NoAdWebViewClient extends WebViewClient {
-    //    private String mHomeurl;
     private Context mContext;
 
-    public NoAdWebViewClient(/*String homeurl,*/ Context context) {
-//        mHomeurl = homeurl;
+    public NoAdWebViewClient(Context context) {
         mContext = context;
     }
 
     @Override
     public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
-        url = url.toLowerCase();
-//        if (!url.contains(mHomeurl)) {
-        if (!ADFilterTool.hasAd(mContext, url)) {
+        int lastLen = url.length() > 40 ? 40 : url.length();
+        String adUrl = url.substring(0, lastLen).toLowerCase();
+        if (!ADFilterTool.hasAd(mContext, adUrl)) {
             return super.shouldInterceptRequest(view, url);
         } else {
             return new WebResourceResponse(null, null, null);
         }
-//        } else {
-//            return super.shouldInterceptRequest(view, url);
-//
-//        }
     }
 
     /**

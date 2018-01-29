@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="adBlockUrl">
-        <item>ubmcmm.baidustatic.com</item>
-        <item>cpro2.baidustatic.com</item>
-        <item>cpro.baidustatic.com</item>
-        <item>s.lianmeng.360.cn</item>
-        <item>nsclick.baidu.com</item>
-        <item>pos.baidu.com</item>
-        <item>cbjs.baidu.com</item>
-        <item>cpro.baidu.com</item>
-        <item>images.sohu.com/cs/jsfile/js/c.js</item>
-        <item>union.sogou.com/</item>
-        <item>sogou.com/</item>
-        <item>a.baidu.com</item>
-        <item>c.baidu.com</item>
+        <!--<item>baidu.com</item>-->
+        <!--<item>s.lianmeng.360.cn</item>-->
+        <!--<item>images.sohu.com/cs/jsfile/js/c.js</item>-->
+        <!--<item>union.sogou.com</item>-->
+        <!--<item>sogou.com</item>-->
+        <item>df888.eastday.com</item>
+        <item>toutiao.eastday.com</item>
+        <item>tt321.eastday.com</item>
+        <item>eastday.com/toutiaoh5</item>
+        <!--<item>9973.com</item>-->
+        <!--<item>ecma.bdimg.com</item>-->
+        <!--<item>theta.sogoucdn.com</item>-->
+        <!--<item>ubmcmm.baidustatic.com</item>-->
+        <!--<item>cpro2.baidustatic.com</item>-->
+        <!--<item>cpro.baidustatic.com</item>-->
+        <!--<item>a.baidu.com</item>-->
+        <!--<item>c.baidu.com</item>-->
+        <!--<item>nsclick.baidu.com</item>-->
+        <!--<item>pos.baidu.com</item>-->
+        <!--<item>cbjs.baidu.com</item>-->
+        <!--<item>cpro.baidu.com</item>-->
+        <!--<item>f11.baidu.com</item>-->
     </string-array>
 </resources>

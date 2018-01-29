@@ -5,9 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.webkit.GeolocationPermissions;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -20,7 +21,7 @@ import com.ocnyang.qbox.app.utils.webviewutils.NetStatusUtil;
 public class Html5WebView extends WebView {
 
     private ProgressBar mProgressBar;
-//    boolean isNotTop = true;
+    //    boolean isNotTop = true;
     private Context mContext;
     private WebsiteChangeListener mWebsiteChangeListener;
 
@@ -71,8 +72,8 @@ public class Html5WebView extends WebView {
         saveData(mWebSettings);
         newWin(mWebSettings);
         setWebChromeClient(webChromeClient);
-        setWebViewClient(webViewClient);//原来的设置。
-//        setWebViewClient(new NoAdWebViewClient(mContext));//去除广告，可是不起作用
+        setWebViewClient(webViewClient);//已经在这里添加去除广告的功能
+//        setWebViewClient(new NoAdWebViewClient(mContext));//去除广告
     }
 
     /**
@@ -105,14 +106,39 @@ public class Html5WebView extends WebView {
     }
 
     WebViewClient webViewClient = new WebViewClient() {
+        @Override
+        public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
+            int lastLen = url.length() > 40 ? 40 : url.length();
+            String adUrl = url.substring(0, lastLen).toLowerCase();
+            if (!ADFilterTool.hasAd(mContext, adUrl)) {
+                return super.shouldInterceptRequest(view, url);
+            } else {
+                return new WebResourceResponse(null, null, null);
+            }
+        }
+
+        @Override
+        public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                String url = request.getUrl().toString().toLowerCase();
+                if (!ADFilterTool.hasAd(mContext, url)) {
+                    return super.shouldInterceptRequest(view, request);
+                } else {
+                    return new WebResourceResponse(null, null, null);
+                }
+            } else {
+                return super.shouldInterceptRequest(view, request);
+            }
+        }
+
         /**
          * 多页面在同一个WebView中打开，就是不新建activity或者调用系统浏览器打开
          */
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             view.loadUrl(url);
-            Log.d("Url:", url);
-            if (mWebsiteChangeListener!=null) {
+            if (mWebsiteChangeListener != null) {
                 mWebsiteChangeListener.onUrlChange(url);
             }
             return true;
@@ -178,19 +204,20 @@ public class Html5WebView extends WebView {
         @Override
         public void onReceivedTitle(WebView view, String title) {
             super.onReceivedTitle(view, title);
-            if (mWebsiteChangeListener!=null) {
+            if (mWebsiteChangeListener != null) {
                 mWebsiteChangeListener.onWebsiteChange(title);
             }
         }
     };
 
-    public interface WebsiteChangeListener{
+    public interface WebsiteChangeListener {
         void onWebsiteChange(String title);
+
         void onUrlChange(String url);
 //        void onWebsiteChangeBackTop();
     }
 
-    public void setWebsiteChangeListener(WebsiteChangeListener websiteChangeListener){
+    public void setWebsiteChangeListener(WebsiteChangeListener websiteChangeListener) {
         this.mWebsiteChangeListener = websiteChangeListener;
 
     }
