@@ -2,6 +2,14 @@
 	
     {
         "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
+        "versionCode": 6,
+        "versionName": "2.1",
+        "updateMessage": "1. 数据源优化，请求次数额度大大提升，请求失败的现象得到大幅改善；\n2. 给文章详情页面添加过滤，去除存在的杂乱信息；\n3. 部分细化调整。",
+        "dateTime": "2018年2月07日",
+        "author": "OCNYang"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk",
         "versionCode": 4,
         "versionName": "1.6",
         "updateMessage": "1. 添加天气模块；\n2. 图片显示效果调整；\n3. 部分细化调整。",
