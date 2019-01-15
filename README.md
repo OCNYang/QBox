@@ -1,7 +1,7 @@
 # QBox  
 
 <div  align="center">
-<img src="http://obbu6r1mi.bkt.clouddn.com/qbox/qbox.png" width = "400" alt="小秋魔盒" align=center />
+<img src="http://img.shedoor.net/qbox/qbox.png" width = "400" alt="小秋魔盒" align=center />
 </div>
 
 [![GitHub issues](https://img.shields.io/github/issues/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/issues)&ensp;&ensp;[![GitHub forks](https://img.shields.io/github/forks/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/network)&ensp;&ensp;[![GitHub stars](https://img.shields.io/github/stars/OCNYang/QBox.svg)](https://github.com/OCNYang/QBox/stargazers)  
@@ -27,20 +27,21 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 > 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
 > 10.手势图片 11.能力图表格 12.视差图片  
 
-![新闻资讯](http://obbu6r1mi.bkt.clouddn.com/qbox/list.png?imageView2/2/w/270/q/95)
-![转场动画](http://obbu6r1mi.bkt.clouddn.com/qbox/skipanim.gif?imageView2/2/w/270/q/95)
-![日历模块](http://obbu6r1mi.bkt.clouddn.com/qbox/cla.gif?imageView2/2/w/270/q/95)  
-![天气模块](http://obbu6r1mi.bkt.clouddn.com/qbox/wealther.gif?imageView2/2/w/270/q/95)
-![颜色画板](http://obbu6r1mi.bkt.clouddn.com/qbox/colorpicker.png?imageView2/2/w/270/q/95)
-![盒子布局](http://obbu6r1mi.bkt.clouddn.com/qbox/flex.png?imageView2/2/w/270/q/95)  
-![拖曳列表](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_headerandfooter.gif?imageView2/2/w/270/q/95)
-![下拉果冻弹跳效果](http://obbu6r1mi.bkt.clouddn.com/qbox/shuaxin.gif?imageView2/2/w/270/q/95)
-![引导页](http://obbu6r1mi.bkt.clouddn.com/qbox/sliding.gif?imageView2/2/w/270/q/95)  
-![手势效果图片](http://obbu6r1mi.bkt.clouddn.com/qbox/PinImageview.gif?imageView2/2/w/270/q/95)
-![能力表格](http://obbu6r1mi.bkt.clouddn.com/qbox/mpandroidchart.gif?imageView2/2/w/270/q/95)
-![视差图片](http://obbu6r1mi.bkt.clouddn.com/qbox/ken.gif?imageView2/2/w/270/q/95)  
-![拖曳](http://obbu6r1mi.bkt.clouddn.com/qbox/recy_yidong.gif?imageView2/2/w/405/q/95)
-![搜索框](http://obbu6r1mi.bkt.clouddn.com/qbox/searchLayout.gif?imageView2/2/w/405/q/95)
+![新闻资讯](http://
+/qbox/list.png?imageView2/2/w/270/q/95)
+![转场动画](http://img.shedoor.net/qbox/skipanim.gif?imageView2/2/w/270/q/95)
+![日历模块](http://img.shedoor.net/qbox/cla.gif?imageView2/2/w/270/q/95)  
+![天气模块](http://img.shedoor.net/qbox/wealther.gif?imageView2/2/w/270/q/95)
+![颜色画板](http://img.shedoor.net/qbox/colorpicker.png?imageView2/2/w/270/q/95)
+![盒子布局](http://img.shedoor.net/qbox/flex.png?imageView2/2/w/270/q/95)  
+![拖曳列表](http://img.shedoor.net/qbox/recy_headerandfooter.gif?imageView2/2/w/270/q/95)
+![下拉果冻弹跳效果](http://img.shedoor.net/qbox/shuaxin.gif?imageView2/2/w/270/q/95)
+![引导页](http://img.shedoor.net/qbox/sliding.gif?imageView2/2/w/270/q/95)  
+![手势效果图片](http://img.shedoor.net/qbox/PinImageview.gif?imageView2/2/w/270/q/95)
+![能力表格](http://img.shedoor.net/qbox/mpandroidchart.gif?imageView2/2/w/270/q/95)
+![视差图片](http://img.shedoor.net/qbox/ken.gif?imageView2/2/w/270/q/95)  
+![拖曳](http://img.shedoor.net/qbox/recy_yidong.gif?imageView2/2/w/405/q/95)
+![搜索框](http://img.shedoor.net/qbox/searchLayout.gif?imageView2/2/w/405/q/95)
 
 ## Wiki (集成说明)
 
