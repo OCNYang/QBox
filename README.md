@@ -27,8 +27,7 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 > 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
 > 10.手势图片 11.能力图表格 12.视差图片  
 
-![新闻资讯](http://
-/qbox/list.png?imageView2/2/w/270/q/95)
+![新闻资讯](http://img.shedoor.net/qbox/list.png?imageView2/2/w/270/q/95)
 ![转场动画](http://img.shedoor.net/qbox/skipanim.gif?imageView2/2/w/270/q/95)
 ![日历模块](http://img.shedoor.net/qbox/cla.gif?imageView2/2/w/270/q/95)  
 ![天气模块](http://img.shedoor.net/qbox/wealther.gif?imageView2/2/w/270/q/95)
