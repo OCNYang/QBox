@@ -15,7 +15,7 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 
 #### 下载地址 | APK Download：
 
-**地址一：**[http://fir.im/qbox](http://fir.im/qbox)  
+**地址一：**[http://d.firim.info/qbox](http://d.firim.info/qbox)  
 **地址二：**[https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk](https://raw.githubusercontent.com/OCNYang/QBox/master/apk/QBox.apk)  
 
 ## 应用预览 | UI
