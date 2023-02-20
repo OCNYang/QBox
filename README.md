@@ -1,7 +1,7 @@
 # QBox  
 
 <div  align="center">
-<img src="http://img.shedoor.net/qbox/qbox.png" width = "400" alt="小秋魔盒" align=center />
+<img src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/qbox.png" width = "400" alt="小秋魔盒" align=center />
 </div>
 
 tips:前段时间远程数据库造成的问题已修复，现已能正常使用
@@ -29,20 +29,18 @@ A life tool App: simple and beautiful, pure, love.(Welcome to **Star** and **For
 > 7.魔力数字排序列表 8.下拉果冻弹跳效果 9.引导页  
 > 10.手势图片 11.能力图表格 12.视差图片  
 
-![新闻资讯](http://img.shedoor.net/qbox/list.png?imageView2/2/w/270/q/95)
-![转场动画](http://img.shedoor.net/qbox/skipanim.gif?imageView2/2/w/270/q/95)
-![日历模块](http://img.shedoor.net/qbox/cla.gif?imageView2/2/w/270/q/95)  
-![天气模块](http://img.shedoor.net/qbox/wealther.gif?imageView2/2/w/270/q/95)
-![颜色画板](http://img.shedoor.net/qbox/colorpicker.png?imageView2/2/w/270/q/95)
-![盒子布局](http://img.shedoor.net/qbox/flex.png?imageView2/2/w/270/q/95)  
-![拖曳列表](http://img.shedoor.net/qbox/recy_headerandfooter.gif?imageView2/2/w/270/q/95)
-![下拉果冻弹跳效果](http://img.shedoor.net/qbox/shuaxin.gif?imageView2/2/w/270/q/95)
-![引导页](http://img.shedoor.net/qbox/sliding.gif?imageView2/2/w/270/q/95)  
-![手势效果图片](http://img.shedoor.net/qbox/PinImageview.gif?imageView2/2/w/270/q/95)
-![能力表格](http://img.shedoor.net/qbox/mpandroidchart.gif?imageView2/2/w/270/q/95)
-![视差图片](http://img.shedoor.net/qbox/ken.gif?imageView2/2/w/270/q/95)  
-![拖曳](http://img.shedoor.net/qbox/recy_yidong.gif?imageView2/2/w/405/q/95)
-![搜索框](http://img.shedoor.net/qbox/searchLayout.gif?imageView2/2/w/405/q/95)
+<img width="300px" alt="新闻资讯" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/list.png"/><img width="300px" alt="转场动画" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/skipanim.gif"/>
+<img width="300px" alt="日历模块" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/cla.gif"/><img width="300px" alt="天气模块" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/wealther.gif"/>
+<img width="300px" alt="颜色画板" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/colorpicker.png"/>
+<img width="300px" alt="盒子布局" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/flex.png"/>
+<img width="300px" alt="拖曳列表" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/recy_headerandfooter.gif"/>
+<img width="300px" alt="下拉果冻弹跳效果" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/shuaxin.gif"/>
+<img width="300px" alt="引导页" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/sliding.gif"/>
+<img width="300px" alt="手势效果图片" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/PinImageview.gif"/>
+<img width="300px" alt="能力表格" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/mpandroidchart.gif"/>
+<img width="300px" alt="视差图片" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/ken.gif"/>
+<img width="300px" alt="拖曳" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/recy_yidong.gif"/>
+<img width="300px" alt="搜索框" src="https://cdn.jsdelivr.net/gh/ocnyang/gallery@master/qbox/searchLayout.gif"/>
 
 ## Wiki (集成说明)
 
